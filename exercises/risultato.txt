@@ -1,0 +1,6 @@
+io sono il risultato della funzione invocata con args=(1, 2) e kwargs={}
+1
+io sono il risultato della funzione invocata con args=(9,) e kwargs={'k': 2}
+9
+io sono il risultato della funzione invocata con args=() e kwargs={'j': 6, 'k': 3}
+6

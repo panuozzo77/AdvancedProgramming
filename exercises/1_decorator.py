@@ -6,15 +6,16 @@ def decf(function):
         if len(args) + len(kwargs)!=2:
             raise TypeError("function must have 2 arguments!")
         else:
-            result = function(*args, **kwargs)
-            # qui continuiamo a scrivere la funzione decoratore
-            with open("risultato.txt", "a") as file:
-                arg1 = str(args[0])
-                result_str = str(result)
-
-                file.write(arg1 + " + " + result_str + " = " + str(float(arg1) + float(result_str)) + "\n")
-                # abbiamo finito la funzione decoratore
-                return result
+            f_o=open("risultato.txt", "a")
+            res=function(*args, **kwargs)
+            if res!=None:
+                f_o.write(res)
+            if args:
+                f_o.write(str(args[0]))
+            else:
+                f_o.write(str(next(iter(kwargs.values()))))
+            f_o.write("\n")
+            f_o.close()
     return wrapper
 
 @decf
