@@ -29,7 +29,7 @@ def create_index(root_folder):
                 filepath = os.path.join(subdir, file)
                 # Aggiungi 'classNotes' al percorso relativo
                 relative_path = os.path.relpath(filepath, os.path.dirname(root_folder))
-                relative_path = os.path.join('classNotes', os.path.relpath(filepath, root_folder))
+                link_path = os.path.join('classNotes', os.path.relpath(filepath, root_folder))
 
                 # Leggi il contenuto del file markdown
                 with open(filepath, 'r', encoding='utf-8') as f:
@@ -40,9 +40,10 @@ def create_index(root_folder):
 
                 # Aggiungi i titoli all'indice
                 if headings:
-                    index_content += f"## {relative_path}\n\n"
+                    # Aggiungi solo il nome del file senza 'classNotes/'
+                    index_content += f"## {file}\n\n"
                     for level, title in headings:
-                        link = generate_link(relative_path, title)
+                        link = generate_link(link_path, title)
                         indent = '  ' * (level - 1)  # Gestisce i livelli di indentazione
                         index_content += f"{indent}{link}\n"
                     index_content += "\n"

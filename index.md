@@ -1,6 +1,6 @@
-# Index
+# Indice degli appunti
 
-## classNotes/09_23.md
+## 09_23.md
 
   - [Oggetti Mutable ed Immutable](classNotes/09_23.md#oggetti-mutable-ed-immutable)
   - [Oggetti Iterable](classNotes/09_23.md#oggetti-iterable)
@@ -8,7 +8,7 @@
   - [Concatenazione di liste](classNotes/09_23.md#concatenazione-di-liste)
     - [metodi di list](classNotes/09_23.md#metodi-di-list)
 
-## classNotes/09_24.md
+## 09_24.md
 
   - [Classe tuple](classNotes/09_24.md#classe-tuple)
     - [packing/unpacking](classNotes/09_24.md#packing/unpacking)
@@ -26,7 +26,7 @@
   - [comprehension](classNotes/09_24.md#comprehension)
     - [Doppia Comprehension](classNotes/09_24.md#doppia-comprehension)
 
-## classNotes/09_30.md
+## 09_30.md
 
   - [Funzioni](classNotes/09_30.md#funzioni)
   - [Stringa di documentazione](classNotes/09_30.md#stringa-di-documentazione)
@@ -37,7 +37,7 @@
   - [Numero variabile di argomenti](classNotes/09_30.md#numero-variabile-di-argomenti)
   - [L'operatore \#](classNotes/09_30.md#loperatore-\#)
 
-## classNotes/10_01.md
+## 10_01.md
 
   - [Parametri Keyword](classNotes/10_01.md#parametri-keyword)
   - [L'operatore **](classNotes/10_01.md#loperatore-**)
@@ -57,7 +57,7 @@
   - [Moduli](classNotes/10_01.md#moduli)
   - [La variabile \_\_name__](classNotes/10_01.md#la-variabile-\_\_name__)
 
-## classNotes/10_02 - Strutturale - Decorator.md
+## 10_02 - Strutturale - Decorator.md
 
 - [Strutturale - Decorator](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#strutturale---decorator)
     - [Il Pattern Decorator (è una funzione)](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#il-pattern-decorator-(è-una-funzione))
@@ -74,7 +74,7 @@
     - [Class Decorator e Proprietà](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#class-decorator-e-proprietà)
     - [Class Decorator vs Derivazioni di Classi](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#class-decorator-vs-derivazioni-di-classi)
 
-## classNotes/10_02.md
+## 10_02.md
 
 - [Strutturale - Decorator](classNotes/10_02.md#strutturale---decorator)
     - [Il Pattern Decorator (è una funzione)](classNotes/10_02.md#il-pattern-decorator-(è-una-funzione))
@@ -91,7 +91,7 @@
     - [Class Decorator e Proprietà](classNotes/10_02.md#class-decorator-e-proprietà)
     - [Class Decorator vs Derivazioni di Classi](classNotes/10_02.md#class-decorator-vs-derivazioni-di-classi)
 
-## classNotes/10_07.md
+## 10_07.md
 
   - [Classi in Python](classNotes/10_07.md#classi-in-python)
   - [Costruttori in Python](classNotes/10_07.md#costruttori-in-python)
@@ -104,7 +104,7 @@
   - [L'operatore \_\_bool__](classNotes/10_07.md#loperatore-\_\_bool__)
   - [L'operatore \_\_iter__](classNotes/10_07.md#loperatore-\_\_iter__)
 
-## classNotes/10_08.md
+## 10_08.md
 
   - [Ereditarietà](classNotes/10_08.md#ereditarietà)
   - [Utilizzo metodo classi base](classNotes/10_08.md#utilizzo-metodo-classi-base)
@@ -122,7 +122,7 @@
 - [continuiamo con gli esempi](classNotes/10_08.md#continuiamo-con-gli-esempi)
   - [Abstract Base Class (ABC)](classNotes/10_08.md#abstract-base-class-(abc))
 
-## classNotes/Comportamentale - Chain of Responsability.md
+## Comportamentale - Chain of Responsability.md
 
 - [Comportamentale - Chain of Responsability](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#comportamentale---chain-of-responsability)
     - [Esempio](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio)
@@ -132,35 +132,35 @@
     - [Esempio Basato su Coroutine](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
     - [Esempio Precedente basato su Coroutine](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-precedente-basato-su-coroutine)
 
-## classNotes/Comportamentale - Mediator.md
+## Comportamentale - Mediator.md
 
 - [Comportamentale - Mediator](classNotes/Comportamentale%20-%20Mediator.md#comportamentale---mediator)
     - [Esempio](classNotes/Comportamentale%20-%20Mediator.md#esempio)
     - [Esempio basato su Coroutine](classNotes/Comportamentale%20-%20Mediator.md#esempio-basato-su-coroutine)
 
-## classNotes/Comportamentale - Observer.md
+## Comportamentale - Observer.md
 
 - [Comportamentale - Observer](classNotes/Comportamentale%20-%20Observer.md#comportamentale---observer)
     - [Esempio](classNotes/Comportamentale%20-%20Observer.md#esempio)
 
-## classNotes/Comportamentale - State.md
+## Comportamentale - State.md
 
 - [Comportamentale - State](classNotes/Comportamentale%20-%20State.md#comportamentale---state)
 
-## classNotes/Comportamentale - Template Method.md
+## Comportamentale - Template Method.md
 
 - [Comportamentale - Template Method](classNotes/Comportamentale%20-%20Template%20Method.md#comportamentale---template-method)
 
-## classNotes/Creazionale - Factory Method.md
+## Creazionale - Factory Method.md
 
 - [Creazionale - Factory Method](classNotes/Creazionale%20-%20Factory%20Method.md#creazionale---factory-method)
     - [Esempio](classNotes/Creazionale%20-%20Factory%20Method.md#esempio)
 
-## classNotes/Creazionale - Prototype.md
+## Creazionale - Prototype.md
 
 - [Creazionale - Prototype](classNotes/Creazionale%20-%20Prototype.md#creazionale---prototype)
 
-## classNotes/Creazionale - Singleton.md
+## Creazionale - Singleton.md
 
 - [Creazionale - Singleton](classNotes/Creazionale%20-%20Singleton.md#creazionale---singleton)
     - [FunFact su __getattr__ e __getattribute__](classNotes/Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
@@ -169,27 +169,27 @@
     - [Module-Level Singleton](classNotes/Creazionale%20-%20Singleton.md#module-level-singleton)
 - [module1.py](classNotes/Creazionale%20-%20Singleton.md#module1py)
 
-## classNotes/Generatori e Coroutine.md
+## Generatori e Coroutine.md
 
 - [Generatori e Coroutine](classNotes/Generatori%20e%20Coroutine.md#generatori-e-coroutine)
     - [Metodi del Generatore](classNotes/Generatori%20e%20Coroutine.md#metodi-del-generatore)
     - [Yield from](classNotes/Generatori%20e%20Coroutine.md#yield-from)
 
-## classNotes/Strutturale - Adapter.md
+## Strutturale - Adapter.md
 
 - [Strutturale - Adapter](classNotes/Strutturale%20-%20Adapter.md#strutturale---adapter)
     - [Altro Esempio](classNotes/Strutturale%20-%20Adapter.md#altro-esempio)
 
-## classNotes/Strutturale - Facade.md
+## Strutturale - Facade.md
 
 - [Strutturale - Facade](classNotes/Strutturale%20-%20Facade.md#strutturale---facade)
 - [Context Manager](classNotes/Strutturale%20-%20Facade.md#context-manager)
 
-## classNotes/Strutturale - Flyweight.md
+## Strutturale - Flyweight.md
 
 - [Strutturale - Flyweight](classNotes/Strutturale%20-%20Flyweight.md#strutturale---flyweight)
 
-## classNotes/Strutturale - Proxy.md
+## Strutturale - Proxy.md
 
 - [Strutturale - Proxy](classNotes/Strutturale%20-%20Proxy.md#strutturale---proxy)
 - [esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation](classNotes/Strutturale%20-%20Proxy.md#esempio-di-proxy-che-non-fa-nulla-in-particolare-se-non-utilizzare-esattamente-i-metodi-di-implementation)
