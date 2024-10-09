@@ -2,6 +2,9 @@
 
 Welcome to the **Advanced Programming** repository! This repository contains resources for the Advanced Programming course, including class notes, slides, and relevant books. Below is an overview of the folder structure and the contents of each directory.
 
+## Index
+**For a full overview of the class notes, please refer to the [Index](index.md).**
+
 ### Directory Descriptions
 
 - **books/**: This directory contains important reference materials for the course.
