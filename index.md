@@ -1,4 +1,4 @@
-# Indice degli appunti
+# Index
 
 ## 09_23.md
 
@@ -57,22 +57,13 @@
   - [Moduli](classNotes/10_01.md#moduli)
   - [La variabile \_\_name__](classNotes/10_01.md#la-variabile-\_\_name__)
 
-## 10_02 - Strutturale - Decorator.md
+## 10_02 - Strutturale - Decorator function.md
 
-- [Strutturale - Decorator](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#strutturale---decorator)
-    - [Il Pattern Decorator (è una funzione)](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#il-pattern-decorator-(è-una-funzione))
-    - [Function Decorator](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#function-decorator)
-    - [Analizziamo bene il codice di sopra](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#analizziamo-bene-il-codice-di-sopra)
-    - [Problema di Documentazione del codice](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#problema-di-documentazione-del-codice)
-    - [Decoratori di Classe](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#decoratori-di-classe)
-    - [Esempio di utilizzo](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#esempio-di-utilizzo)
-    - [Class Decorator e Costruttori](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#class-decorator-e-costruttori)
-    - [Considerazioni sul ridefinire il costruttore](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#considerazioni-sul-ridefinire-il-costruttore)
-    - [Late Binding](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#late-binding)
-  - [Chiusura](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#chiusura)
-    - [Attributi Proprietà](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#attributi-proprietà)
-    - [Class Decorator e Proprietà](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#class-decorator-e-proprietà)
-    - [Class Decorator vs Derivazioni di Classi](classNotes/10_02%20-%20Strutturale%20-%20Decorator.md#class-decorator-vs-derivazioni-di-classi)
+- [Strutturale - Decorator](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#strutturale---decorator)
+    - [Il Pattern Decorator (è una funzione)](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#il-pattern-decorator-(è-una-funzione))
+    - [Function Decorator](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#function-decorator)
+    - [Analizziamo bene il codice di sopra](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#analizziamo-bene-il-codice-di-sopra)
+    - [Problema di Documentazione del codice](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#problema-di-documentazione-del-codice)
 
 ## 10_02.md
 
@@ -121,6 +112,26 @@
 - [codice analogo, vedi differenza tra assert e raise](classNotes/10_08.md#codice-analogo,-vedi-differenza-tra-assert-e-raise)
 - [continuiamo con gli esempi](classNotes/10_08.md#continuiamo-con-gli-esempi)
   - [Abstract Base Class (ABC)](classNotes/10_08.md#abstract-base-class-(abc))
+
+## 10_14 - Strutturale - Decorator class.md
+
+  - [Decoratori di Classe](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#decoratori-di-classe)
+  - [Esempio di utilizzo](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#esempio-di-utilizzo)
+  - [Class Decorator e Costruttori](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-e-costruttori)
+  - [Considerazioni sul ridefinire il costruttore](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#considerazioni-sul-ridefinire-il-costruttore)
+  - [Late Binding](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#late-binding)
+- [Chiusura](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#chiusura)
+  - [Attributi Proprietà](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#attributi-proprietà)
+  - [Class Decorator e Proprietà](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-e-proprietà)
+  - [Class Decorator vs Derivazioni di Classi](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-vs-derivazioni-di-classi)
+
+## 10_14.md
+
+  - [I Metodi Statici e i Metodi di Classe](classNotes/10_14.md#i-metodi-statici-e-i-metodi-di-classe)
+  - [Metodo di classe che conta le istanze](classNotes/10_14.md#metodo-di-classe-che-conta-le-istanze)
+  - [Variante con variabili per ogni sottoclasse](classNotes/10_14.md#variante-con-variabili-per-ogni-sottoclasse)
+  - [Alternativa, decoratore per metodi statici e di classe](classNotes/10_14.md#alternativa,-decoratore-per-metodi-statici-e-di-classe)
+  - [\_\_slots__](classNotes/10_14.md#\_\_slots__)
 
 ## Comportamentale - Chain of Responsability.md
 
