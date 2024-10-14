@@ -1,4 +1,37 @@
+class MyDictionary:
+    def __init__(self):
+        # Dictionary to store key-value pairs
+        self.store = {}
 
+    def __setitem__(self, key, value):
+        # Set a key-value pair in the dictionary
+        self.store[key] = value
+
+    def __getitem__(self, key):
+        # Retrieve the value for the given key
+        if key not in self.store:
+            raise KeyError(key)
+        return self.store[key]
+
+    def __delitem__(self, key):
+        # Delete the key-value pair from the dictionary
+        if key in self.store:
+            del self.store[key]
+        else:
+            raise KeyError(key)
+
+    def __eq__(self, other):
+        # Compare two dictionaries by their key-value pairs
+        if isinstance(other, MyDictionary):
+            return self.store == other.store
+        return False
+
+    def __str__(self):
+        # Custom string representation to match the expected output
+        return '{' + ','.join(f"({k},{v})" for k, v in self.store.items()) + '}'
+
+    def __repr__(self):
+        return self.__str__()
 
 """Test per myDidictionary (si veda l'ultimo fascicolo di slide)."""
 
