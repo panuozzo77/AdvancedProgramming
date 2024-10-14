@@ -1,4 +1,4 @@
-# Index
+# ClassNotes Index
 
 ## 09_23.md
 

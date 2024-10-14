@@ -21,7 +21,7 @@ def generate_link(filename, title):
 
 # Funzione principale per creare l'indice
 def create_index(root_folder):
-    index_content = "# Index\n\n"
+    index_content = "# ClassNotes Index\n\n"
     # Cammina attraverso tutti i file e sottocartelle
     for subdir, _, files in os.walk(root_folder):
         for file in sorted(files):  # Ordina i file in ordine lessicografico
