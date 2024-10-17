@@ -119,11 +119,6 @@
   - [Esempio di utilizzo](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#esempio-di-utilizzo)
   - [Class Decorator e Costruttori](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-e-costruttori)
   - [Considerazioni sul ridefinire il costruttore](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#considerazioni-sul-ridefinire-il-costruttore)
-  - [Late Binding](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#late-binding)
-- [Chiusura](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#chiusura)
-  - [Attributi Proprietà](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#attributi-proprietà)
-  - [Class Decorator e Proprietà](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-e-proprietà)
-  - [Class Decorator vs Derivazioni di Classi](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-vs-derivazioni-di-classi)
 
 ## 10_14.md
 
@@ -132,6 +127,14 @@
   - [Variante con variabili per ogni sottoclasse](classNotes/10_14.md#variante-con-variabili-per-ogni-sottoclasse)
   - [Alternativa, decoratore per metodi statici e di classe](classNotes/10_14.md#alternativa,-decoratore-per-metodi-statici-e-di-classe)
   - [\_\_slots__](classNotes/10_14.md#\_\_slots__)
+
+## 10_15.md
+
+  - [Late Binding](classNotes/10_15.md#late-binding)
+- [Chiusura](classNotes/10_15.md#chiusura)
+  - [Attributi Proprietà](classNotes/10_15.md#attributi-proprietà)
+  - [Class Decorator e Proprietà](classNotes/10_15.md#class-decorator-e-proprietà)
+  - [Class Decorator vs Derivazioni di Classi](classNotes/10_15.md#class-decorator-vs-derivazioni-di-classi)
 
 ## Comportamentale - Chain of Responsability.md
 
