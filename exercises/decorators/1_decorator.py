@@ -6,7 +6,7 @@ def decf(function):
         if len(args) + len(kwargs)!=2:
             raise TypeError("function must have 2 arguments!")
         else:
-            f_o=open("risultato.txt", "a")
+            f_o=open("../risultato.txt", "a")
             res=function(*args, **kwargs)
             if res!=None:
                 f_o.write(res)

@@ -8,7 +8,7 @@ Il pattern Singleton è un pattern creazionale ed è usato quando abbiamo bisogn
 
 Implementazioni:
 
-- Spooler di stampa.
+- Spooler di stampa.****
 - Gestione connessioni ai database.
 - Trovare e memorizzare informazioni su un file di configurazione esterno.
 
