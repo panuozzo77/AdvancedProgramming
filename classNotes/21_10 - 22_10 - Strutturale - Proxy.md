@@ -12,27 +12,27 @@ In breve, il Proxy è una classe che funge da "procuratore" per un'altra classe,
 ```python
 # esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation
 class Implementation:
-	def f(self):
-		print("Implementation.f()")
-	
-	def g(self):
-		print("Implementation.g()")
-	
-	def h(self):
-		print("Implementation.h()")
+    def f(self):
+        print("Implementation.f()")
+    
+    def g(self):
+        print("Implementation.g()")
+    
+    def h(self):
+        print("Implementation.h()")
 
-	class Proxy:
-		def __init__(self):
-			self.__implementation = Implementation()
+class Proxy:
+    def __init__(self):
+        self.__implementation = Implementation()
 
-		# Passa le chiamate ai metodi all’implementazione:
-		def f(self): self.__implementation.f() 
-		def g(self): self.__implementation.g() 
-		def h(self): self.__implementation.h()
+    # Passa le chiamate ai metodi all’implementazione:
+    def f(self): self.__implementation.f() 
+    def g(self): self.__implementation.g() 
+    def h(self): self.__implementation.h()
 
-		#altrimenti, se vogliamo fare una cosa fina:
-		def __getattr__(self, name)
-			return getattr(self.__implementation, name)
+    #altrimenti, se vogliamo fare una cosa fina:
+    def __getattr__(self, name):
+        return getattr(self.__implementation, name)
 
 p = Proxy()
 p.f(); p.g(); p.h()
@@ -44,7 +44,7 @@ p.f(); p.g(); p.h()
 - I moduli Image e cyImage creano le immagini in memoria.
 - Voglia dei proxy leggeri che ci permettano di creare un’immagine solo quando sapremo di quale immagine avremo bisogno.
 - L’interfaccia Image.Image si compone di 10 metodi + costruttori ed altri metodi di salvataggio e predefiniti per alcune figure.
-
+<br><br>
 - ImageProxy può essere usata al posto di Image.Image. Basta usare qualsiasi interfaccia che supporti Image.
 - Un oggetto ImageProxy non salva un’immagine ma mantiene una lista di tuple di comandi dove il primo elemento di ciascuna tupla è una funzione od un metodo unbound ed i rimanenti elementi sono gli argomenti da passare quando la funzione o il metodo è invocato
 - ImageProxy supporta pienamente i 4 metodi di Image.Image line(), rectangle(), ellipse() e set_pixel(). Ogni volta che ne viene invocato uno, questo è aggiunto in una lista di comandi.
@@ -53,8 +53,7 @@ p.f(); p.g(); p.h()
 ```python
 class ImageProxy:
 	def __init__(self, ImageClass, width=None, height=None, filename=None):
-		assert (width is not None and height is not None) or \
-		 filename is not None
+		assert (width is not None and height is not None) or filename is not None
 	 self.Image = ImageClass
 	 self.commands = []
 	if filename is not None:
@@ -64,24 +63,28 @@ class ImageProxy:
 
 	def load(self, filename):
 	 self.commands = [(self.Image, None, None, filename)]
+     
 	def set_pixel(self, x, y, color):
 	 self.commands.append((self.Image.set_pixel, x, y, color))
+     
 	def line(self, x0, y0, x1, y1, color):
 	 self.commands.append((self.Image.line, x0, y0, x1, y1, color))
+     
 	def rectangle(self, x0, y0, x1, y1, outline=None, fill=None):
 	 self.commands.append((self.Image.rectangle, x0, y0, x1, y1, outline, fill))
+     
 	def ellipse(self, x0, y0, x1, y1, outline=None, fill=None):
 	 self.commands.append((self.Image.ellipse, x0, y0, x1, y1, outline, fill))
 
 	def save(self, filename=None):
-		command = self.commands.pop[0]
-		function, *args = command
-		image = function(*args)
-		for command in self.commands:
+		command = self.commands.pop[0] # salvo tutta la tupla dei comandi
+		function, *args = command # inizio a scompattare, in function il nome del costruttore, tutto il resto va in args
+		image = function(*args) # invoco function sugli argomenti
+		for command in self.commands: # scandisco tutti i comandi (ho tolto col pop le rimanenti tuple)
 			function, *args = command
-			function(image, *args)
-		image.save(filename)
-		return image
+			function(image, *args) # invoco function sugli argomenti
+		image.save(filename) # uso il save di Image
+		return image # restituisco l'immagine
 ```
 
 - Se un metodo non supportato viene invocato (come pixel()) Python lancia AttributeError.
