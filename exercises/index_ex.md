@@ -2,12 +2,12 @@
 
 ## [1_python_standard](1_python_standard)
 
-- [3_myDictionary.py](1_python_standard/3_myDictionary.py)
+- [3_myDictionary.py](1_python_standard/1_myDictionary.py)
 
 ```text
 Test per myDidictionary (si veda l'ultimo fascicolo di slide).
 ```
-- [6_esercitazione.py](1_python_standard/6_esercitazione.py)
+- [6_esercitazione.py](1_python_standard/2_esercitazione.py)
 
 ```text
 Esercizio 5
@@ -16,7 +16,7 @@ e se tale attributo non è presente, allora aggiungere l'attributo s con un valo
  Il metodo deve funzionare anche per le eventuali sottoclassi agendo sulla sottoclasse senza bisogno però di essere
  ridefinito nella sottoclasse.
 ```
-- [9_classeC.py](1_python_standard/9_classeC.py)
+- [9_classeC.py](1_python_standard/3_classeC.py)
 
 ```text
 - Scrivere una classe C per cui accade che ogni volta che si aggiunge una variabile di istanza ad una delle istanze di C
@@ -32,20 +32,20 @@ variabili di classe e non di istanza.
 ---
 ## [2_decorators](2_decorators)
 
-- [10_fdecorator.py](2_decorators/10_fdecorator.py)
+- [10_fdecorator.py](2_decorators/6_fdecorator.py)
 
 ```text
 Modificare la funzione al punto precedente in modo che la funzione decorata operi su qualsiasi elemento possa essere
 convertito in int e che non si abbia errore se un elemento della lista non può essere convertito in int anche se è di un tipo
 convertibile a int (ad esempio "anna")
 ```
-- [11_decfact.py](2_decorators/11_decfact.py)
+- [11_decfact.py](2_decorators/7_decfact.py)
 
 ```text
 Scrivere un decorator factory che genera un decoratore di classe che dota la classe di un metodo per contare il numero
 di invocazioni del metodo passato come parametro al decorator factory
 ```
-- [12_ClasseConFF.py](2_decorators/12_ClasseConFF.py)
+- [12_ClasseConFF.py](2_decorators/8_ClasseConFF.py)
 
 ```text
 Scrivere un decorator factory che prende in input una classe ClasseConFF e due stringhe funz e ff e restituisce un
@@ -74,7 +74,7 @@ risultato intervallati da uno spazio. Non dimenticate di convertire il risultato
 Esempio: se la funzione riceve in input "il", "risultato", "è", la funzione non lancia l'eccezione e restituisce la stringa
 "Il risultato è..." dove al posto dei puntini deve apparire il risultato della funzione
 ```
-- [4_esercitazione.py](2_decorators/4_esercitazione.py)
+- [4_esercitazione.py](2_decorators/3_esercitazione.py)
 
 ```text
 Dopo aver eseguito il programma una volta, il file risultato.txt deve contenere le seguenti linee:
@@ -86,13 +86,13 @@ io sono il risultato della funzione invocata con args=(9,) e kwargs={'k': 2}
 io sono il risultato della funzione invocata con args=() e kwargs={'j': 6, 'k': 3}
 6
 ```
-- [5_esercitazione.py](2_decorators/5_esercitazione.py)
+- [5_esercitazione.py](2_decorators/4_esercitazione.py)
 
 ```text
 g prima di essere decorata e` una funzione che restituisce una stringa formata da 4 ripetizioni del primo argomento, se  c'e` almeno un argomento,
  altrimenti restituisce una stringa vuota. Fornisci la funzione decora
 ```
-- [7_decorator_class.py](2_decorators/7_decorator_class.py)
+- [7_decorator_class.py](2_decorators/5_decorator_class.py)
 
 ```text
 Scrivere un decoratore di classe che, se applicato ad una classe, la modifica in modo che funzioni
