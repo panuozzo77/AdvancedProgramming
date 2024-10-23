@@ -1,3 +1,10 @@
+"""
+- Scrivere il decoratore di funzione decf che fa in modo che venga lanciata l'eccezione 'TypeError' se il numero di
+  argomenti è diverso da due. Altrimenti, se la funzione decorata restituisce un risultato, questo viene aggiunto
+  insieme al valore del primo argomento in un file di nome 'risultato.txt'.
+- Suggerimento: ricorda di convertire a stringa il valore del primo argomento e il risultato quando li scrivete nel file
+  e di aprire il file in modo da NON cancellare quanto scritto precedentemente nel file.
+"""
 import functools
 
 def decf(function):

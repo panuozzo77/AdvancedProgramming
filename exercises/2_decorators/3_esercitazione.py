@@ -1,3 +1,16 @@
+"""
+NOTA: non è ben nota la traccia dell'esercizio, è stata ricostruita ad occhio vedendo il comportamento atteso.
+- Scrivi una funzione decf che lanci l'eccezione TypeError se il numero di argomenti passati alla funzione decorata è
+  superiore a 2. Altrimenti, procedi con l'esecuzione della funzione.
+"""
+
+def decf(function):
+    def wrapper(*args, **kwargs):
+        if len(args) + len(kwargs) > 2:
+            raise TypeError
+        return function(*args, **kwargs)
+    return wrapper
+
 @decf
 def g(*args, **kwargs):
     return "io sono il risultato della funzione invocata con args={} e kwargs={}\n".format(args, kwargs)
@@ -20,11 +33,11 @@ except TypeError:
     print("g e` stata invocata un numero di argomenti diverso da due")
 
 print("\ninvoco g(1,2)")
-g(1, 2)
+print(g(1, 2))
 print("\ninvoco g(9,k=2)")
-g(9, k=2)
+print(g(9, k=2))
 print("\ninvoco g(j=6,k=3)")
-g(j=6, k=3)
+print(g(j=6, k=3))
 
 """
 Dopo aver eseguito il programma una volta, il file risultato.txt deve contenere le seguenti linee:

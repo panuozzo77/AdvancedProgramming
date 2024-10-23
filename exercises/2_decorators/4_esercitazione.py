@@ -2,6 +2,13 @@
 g prima di essere decorata e` una funzione che restituisce una stringa formata da 4 ripetizioni del primo argomento, se  c'e` almeno un argomento,
  altrimenti restituisce una stringa vuota. Fornisci la funzione decora
 """
+from functools import wraps
+
+
+def decora(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+
 @decora
 def g(*args, **kwargs):
     """funzione da decorare"""

@@ -1,5 +1,5 @@
 """
-Modificare la funzione al punto precedente in modo che la funzione decorata operi su qualsiasi elemento possa essere
+Modificare la funzione al punto precedente (?) in modo che la funzione decorata operi su qualsiasi elemento possa essere
 convertito in int e che non si abbia errore se un elemento della lista non può essere convertito in int anche se è di un tipo
 convertibile a int (ad esempio "anna")
 """

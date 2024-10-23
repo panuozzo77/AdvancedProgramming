@@ -8,22 +8,19 @@ bisogno di aggiungere altre variabili oltre a quelle sopra indicate, queste altr
 variabili di classe e non di istanza.
 """
 
-
 class C:
+    @classmethod
+    def __setattr__(cls, key, value):
+        setattr(cls, key, value)
 
-    __slots__=['varA','varB']
+class D:
+    _numVars = 0
 
-    def __init__(self):
-        self.varA='varA'
-        self.varB='varB'
-
-    def __setattr__(self, key,value):
-        # Se l'attributo non esiste già come variabile di classe
-        if not hasattr(self.__class__, key):
-            # Crea una variabile di classe
+    def __setattr__(self, key, value):
+        self.__class__._numVars += 1
+        if self.__class__._numVars > 2:
             setattr(self.__class__, key, value)
         else:
-            # Altrimenti, usa il comportamento normale
             super().__setattr__(key, value)
 
 c=C()
@@ -36,4 +33,3 @@ print(c.varA,c.varB)
 c.varE = 5
 print(c.varE)
 print(f'valore preso da c2: {c2.varA}')
-# print(c.__dict__)

@@ -5,12 +5,23 @@ istanze di una classe derivata queste ’’nascono’’ con lo stesso valore d
 ClasseBase. """
 
 class ClasseBase:
-    varC=1000
+    varC = 1000
+
     def __init__(self):
-        self.varI=10
-    def f(self,v):
-        print(v*self.varI)
+        self.varl = 10
+
+    def f(self, v):
+        print(v * self.varl)
 
     @staticmethod
     def g(x):
-        print(x*varC)
+        print(x * ClasseBase.varC)
+
+def deriva(DClass):
+    def decorator(cls):
+        class subClass(cls, DClass):
+            pass
+        return subClass
+    return decorator
+
+

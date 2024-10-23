@@ -8,16 +8,19 @@ Esempio: se la funzione riceve in input "il", "risultato", "è", la funzione non
 """
 
 
-def decora(f):
-    def wrapper(*args, **kwargs):
-            out=""
-            for arg in list(args)+[v for k, v in kwargs.items()]:
-                if type(arg)!=str:
-                    raise TypeError
-                out+=arg+" "
-            result = str(f(*args, **kwargs))
-            out+=result
-            return out
+from functools import wraps
 
-        return wrapper
+
+def decora(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+        allArgs = list(args) + list(kwargs.values())
+        s = ''
+        for arg in allArgs:
+            if not isinstance(arg, str):
+                raise TypeError
+            s += str(arg) + ' '
+        s += str(function(*args, **kwargs))
+        return s
+    return wrapper
 
