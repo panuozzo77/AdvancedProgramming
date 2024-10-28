@@ -65,23 +65,6 @@
     - [Analizziamo bene il codice di sopra](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#analizziamo-bene-il-codice-di-sopra)
     - [Problema di Documentazione del codice](classNotes/10_02%20-%20Strutturale%20-%20Decorator%20function.md#problema-di-documentazione-del-codice)
 
-## 10_02.md
-
-- [Strutturale - Decorator](classNotes/10_02.md#strutturale---decorator)
-    - [Il Pattern Decorator (è una funzione)](classNotes/10_02.md#il-pattern-decorator-(è-una-funzione))
-    - [Function Decorator](classNotes/10_02.md#function-decorator)
-    - [Analizziamo bene il codice di sopra](classNotes/10_02.md#analizziamo-bene-il-codice-di-sopra)
-    - [Problema di Documentazione del codice](classNotes/10_02.md#problema-di-documentazione-del-codice)
-    - [Decoratori di Classe](classNotes/10_02.md#decoratori-di-classe)
-    - [Esempio di utilizzo](classNotes/10_02.md#esempio-di-utilizzo)
-    - [Class Decorator e Costruttori](classNotes/10_02.md#class-decorator-e-costruttori)
-    - [Considerazioni sul ridefinire il costruttore](classNotes/10_02.md#considerazioni-sul-ridefinire-il-costruttore)
-    - [Late Binding](classNotes/10_02.md#late-binding)
-  - [Chiusura](classNotes/10_02.md#chiusura)
-    - [Attributi Proprietà](classNotes/10_02.md#attributi-proprietà)
-    - [Class Decorator e Proprietà](classNotes/10_02.md#class-decorator-e-proprietà)
-    - [Class Decorator vs Derivazioni di Classi](classNotes/10_02.md#class-decorator-vs-derivazioni-di-classi)
-
 ## 10_07.md
 
   - [Classi in Python](classNotes/10_07.md#classi-in-python)
@@ -136,15 +119,37 @@
   - [Class Decorator e Proprietà](classNotes/10_15.md#class-decorator-e-proprietà)
   - [Class Decorator vs Derivazioni di Classi](classNotes/10_15.md#class-decorator-vs-derivazioni-di-classi)
 
-## Comportamentale - Chain of Responsability.md
+## 21_10 - 22_10 - Strutturale - Proxy.md
 
-- [Comportamentale - Chain of Responsability](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#comportamentale---chain-of-responsability)
-    - [Esempio](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio)
-    - [Classe NullHandler](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#classe-nullhandler)
-    - [Classe MouseHandler](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#classe-mousehandler)
-    - [Classe DebugHandler](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#classe-debughandler)
-    - [Esempio Basato su Coroutine](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
-    - [Esempio Precedente basato su Coroutine](classNotes/Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-precedente-basato-su-coroutine)
+- [Strutturale - Proxy](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#strutturale---proxy)
+- [esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#esempio-di-proxy-che-non-fa-nulla-in-particolare-se-non-utilizzare-esattamente-i-metodi-di-implementation)
+    - [Esempio di Virtual Proxy](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#esempio-di-virtual-proxy)
+
+## 21_10 - Creazionale - Singleton.md
+
+- [Creazionale - Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#creazionale---singleton)
+    - [FunFact su __getattr__ e __getattribute__](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
+    - [Esempio di pattern Singleton: la classe Borg](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
+    - [Secondo il Libro](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#secondo-il-libro)
+    - [Module-Level Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module-level-singleton)
+- [module1.py](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module1py)
+
+## 28_10 - Comportamentale - Chain of Responsability.md
+
+- [Comportamentale - Chain of Responsability](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#comportamentale---chain-of-responsability)
+    - [Esempio](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio)
+    - [Classe NullHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-nullhandler)
+    - [Classe MouseHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-mousehandler)
+    - [Classe DebugHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-debughandler)
+    - [Esempio Basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
+    - [Esempio Precedente basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-precedente-basato-su-coroutine)
+
+## 28_10 - Generatori e Coroutine.md
+
+- [Generatori e Coroutine](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#generatori-e-coroutine)
+  - [L'espressione Yield](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#lespressione-yield)
+    - [Metodi del Generatore](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#metodi-del-generatore)
+    - [Yield from](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#yield-from)
 
 ## Comportamentale - Mediator.md
 
@@ -174,21 +179,6 @@
 
 - [Creazionale - Prototype](classNotes/Creazionale%20-%20Prototype.md#creazionale---prototype)
 
-## Creazionale - Singleton.md
-
-- [Creazionale - Singleton](classNotes/Creazionale%20-%20Singleton.md#creazionale---singleton)
-    - [FunFact su __getattr__ e __getattribute__](classNotes/Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
-    - [Esempio di pattern Singleton: la classe Borg](classNotes/Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
-    - [Secondo il Libro](classNotes/Creazionale%20-%20Singleton.md#secondo-il-libro)
-    - [Module-Level Singleton](classNotes/Creazionale%20-%20Singleton.md#module-level-singleton)
-- [module1.py](classNotes/Creazionale%20-%20Singleton.md#module1py)
-
-## Generatori e Coroutine.md
-
-- [Generatori e Coroutine](classNotes/Generatori%20e%20Coroutine.md#generatori-e-coroutine)
-    - [Metodi del Generatore](classNotes/Generatori%20e%20Coroutine.md#metodi-del-generatore)
-    - [Yield from](classNotes/Generatori%20e%20Coroutine.md#yield-from)
-
 ## Strutturale - Adapter.md
 
 - [Strutturale - Adapter](classNotes/Strutturale%20-%20Adapter.md#strutturale---adapter)
@@ -202,10 +192,4 @@
 ## Strutturale - Flyweight.md
 
 - [Strutturale - Flyweight](classNotes/Strutturale%20-%20Flyweight.md#strutturale---flyweight)
-
-## Strutturale - Proxy.md
-
-- [Strutturale - Proxy](classNotes/Strutturale%20-%20Proxy.md#strutturale---proxy)
-- [esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation](classNotes/Strutturale%20-%20Proxy.md#esempio-di-proxy-che-non-fa-nulla-in-particolare-se-non-utilizzare-esattamente-i-metodi-di-implementation)
-    - [Esempio di Virtual Proxy](classNotes/Strutturale%20-%20Proxy.md#esempio-di-virtual-proxy)
 

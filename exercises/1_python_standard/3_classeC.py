@@ -8,6 +8,21 @@ bisogno di aggiungere altre variabili oltre a quelle sopra indicate, queste altr
 variabili di classe e non di istanza.
 """
 
+"""soluzione professoressa"""
+class C:
+    __slots__={"varA", "varB"}
+
+    def __getattr__(self, nome):
+        if nome in C.__slots__ : return super(C, self).__getattr__(nome)
+        return getattr(C, nome)
+
+    def __setattr__(self, nome, valore):
+        if nome in C.__slots__ : return super(C, self).__setattr__(nome, valore)
+        return setattr(C, nome, valore)
+
+
+
+"""soluzione mia"""
 class C:
     @classmethod
     def __setattr__(cls, key, value):

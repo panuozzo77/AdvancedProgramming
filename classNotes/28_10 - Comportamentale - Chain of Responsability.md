@@ -2,17 +2,16 @@
 
 - È utilizzato per separare il codice che effettua una richiesta da quello che la elabora.
 - Invece di avere una funzione che invoca direttamente un’altra funzione, la prima funzione invia la richiesta ad una catena di destinatari.
-    - il primo destinatario può elaborare la richiesta o passarla al prossimo destinatario e così via finché non è raggiunto l’ultimo destinatario che può decidere se scartare o lanciare l’eccezione
+    - il primo destinatario può elaborare la richiesta o passarla al prossimo destinatario e così via finché non è raggiunto l’ultimo destinatario che può decidere se scartare o lanciare l’eccezione.
 
 ### Esempio
-
-![Untitled](Untitled.png)
-
-- A ciascun evento corrisponde una classe per la sua gestione.
-
 ```python
 handler1 = TimerHandler(KeyHandler(MouseHandler(NullHandler())))
 ```
+![Handlers_schema](../img/3.png)
+
+- A ciascun evento corrisponde una classe per la sua gestione.
+
 
 - Gli eventi sono normalmente gestiti in un loop.
 - Nel codice seguente si esce dal loop e si termina l’applicazione se c’è un evento TERMINATE; altrimenti si passa l’evento alla catena che gestisce gli eventi.
@@ -20,10 +19,12 @@ handler1 = TimerHandler(KeyHandler(MouseHandler(NullHandler())))
 ```python
 while True:
 	event = Event.next()
-	if event.kind == Event.TERMINATE;
+	if event.kind == Event.TERMINATE:
 		break
 	handler1.handle(event)
 ```
+- chiedo alla catena di gestire i singoli eventi nella lista
+  - finché non incontra un evento Terminate
 
 ### Classe NullHandler
 
@@ -34,7 +35,7 @@ while True:
 
 ```python
 class NullHandler:
-	def __init__:(self, successor=None)
+	def __init__(self, successor=None):
 		self._successor = successor
 
 	def handle(self, event):
@@ -104,25 +105,25 @@ def coroutine(function):
 
 ### Esempio Precedente basato su Coroutine
 
-```python
-pipeline = key_handler(mouse_handler(timer_handler()))
-```
+
 
 ```python
+def coroutine(function):
+	@functools.wraps(function)
+	def wrapper(*args, **kwargs):
+		 generator = function(*args, **kwargs)
+		 next(generator)
+		 return generator
+	return wrapper
+
+pipeline = key_handler(mouse_handler(timer_handler()))
+
 while True:
 	event = Event.next()
-	if event.kind == Event.TERMINATE;
+	if event.kind == Event.TERMINATE:
 		break
-	handler1.handle(event)
-```
+	pipeline.handle(event)
 
-- Come prima, una volta che la catena è pronta a gestire gli eventi, vengono gestiti con un loop.
-- Siccome ogni funzione è una coroutine, ha il metodo send.
-- Ogni volta che c’è un evento da gestire, è inviato alla pipeline con send.
-- L’evento sarà prima inviato a key_handler().
-- L’ordine dei gestori non è importante.
-
-```python
 @coroutine
 def key_handler(successor=None):
 	while True:
@@ -131,9 +132,22 @@ def key_handler(successor=None):
 			 print("Press: {}".format(event))
 		elif successor is not None:
 		   successor.send(event)
-```
+            
+class MouseHandler(NullHandler):
+	def handle(self, event):
+		if event.kind == Event.MOUSE:
+			print("Click: {}".format(event))
+		else:
+			super().handle(event)
 
-```python
+class NullHandler:
+	def __init__(self, successor=None):
+		self._successor = successor
+
+	def handle(self, event):
+		if self._successor is not None:
+			self._successor.handle(event)
+
 @coroutine
 def debug_handler(successor, file=sys.stdout):
 	while True:
@@ -142,4 +156,8 @@ def debug_handler(successor, file=sys.stdout):
 		successor.send(event)
 ```
 
-![Untitled](Untitled%201.png)
+- Come prima, una volta che la catena è pronta a gestire gli eventi, vengono gestiti con un loop.
+- Siccome ogni funzione è una coroutine, ha il metodo send.
+- Ogni volta che c’è un evento da gestire, è inviato alla pipeline con send.
+- L’evento sarà prima inviato a key_handler().
+- L’ordine dei gestori non è importante.

@@ -178,6 +178,14 @@ Scrivere un generatore che ogni volta che è invocato stampa un elemento dalla l
 non appena incontra un elemento maggiore di 10
 ```
 - [2_factorial_recursive_generator.py](4_generators/2_factorial_recursive_generator.py)
+
+```text
+- Scrivere una funzione generatrice myGenerator(n) che prende in input un intero n>=1 e restituisce un
+iteratore dei primi n faForiali. In altre parole, la prima volta che viene invocato next viene restituito 1!,
+la seconda volta 2!, la terza volta 3!, e così via fino ad n!.
+- Bonus: se la funzione generatrice è definita ricorsivamente è consentito scrivere una funzione generatrice
+  ricorsiva che prende in input più parametri e che viene opportunamente invocata da myGenerator
+```
 - [3_reverse_gen.py](4_generators/3_reverse_gen.py)
 
 ```text
@@ -236,6 +244,28 @@ della classe MyProxy, di fatto viene invocato l'omonimo metodo di istanza di MyC
 
 - si assuma che __init__ di MyClass prenda in input un argomento x e che il comportamento dei suoi metodi di istanza
 dipenda dal valore di x passati a __init__
+```
+
+---
+## [7_chain_of_responsability](7_chain_of_responsability)
+
+- [1_esercizio.py](7_chain_of_responsability/1_esercizio.py)
+
+```text
+- Scrivere una funzione che prende in input una sequenza di richieste (liste di 2 interi) e passa ciascuna richiesta ad
+  una catena di gestori ciascuno dei quali è una coroutine.
+- Se il primo intero della lista è nell'intervallo [0, 4] allora la richiesta viene gestita da Handler_04 che stampa
+  "Richiesta {} gestita da Handler_04.
+- Se il primo intero nella lista è nell'intervallo [5, 9] allora la richiesta viene gestita da Handler_59 che
+  "Richiesta {} gestita da Handler_59.
+- Se il primo intero della lista è maggiore di 9 allora la richiesta viene gestita da Handler_gt9 che stampa:
+  "Messaggio da Handler_gt9: non è stato possibile gestire la richiesta {}. Richiesta modificata".
+    - Dopo aver effettuato la stampa, Handler_gt9 sottrae al primo intero della lista il secondo intero della lista e lo
+      invia nuovamente ad una nuova catena di gestori.
+- Se la richiesta non è una lista di 2 numeri o il primo intero della lista è minore di 0 la richiesta viene gestita da
+  Default_Handler che stampa semplicemente
+  "Richiesta {} gestita da Default_Handler: non è stato possibile gestire la richiesta"
+- Nelle suddette stampe, la lista nella richiesta deve comparire al posto delle parentesi graffe
 ```
 
 ---
