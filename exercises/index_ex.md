@@ -124,6 +124,25 @@ Scrivere un decorator factory che prende in input una classe ClasseConFF e due s
 decoratore di classe che decora una classe in modo tale che se viene invocata funz di fatto al posto di funz viene
 invocata la funzione ff della classe ClasseConFF
 ```
+- [esame_1.py](2_decorators/esame_1.py)
+
+```text
+- scrivere nel file un decorator factory decFact che prende in input un tipo t e restituisce un decoratore di classe
+  decorator che dota la classe decorata di un metodo di istanza 'addToList' che restituisce una lista contenente i nomi
+  e i valori delle variabili di tipo t dell'istanza per cui è invocato. Ciascuna coppia (nome, valore) deve essere all'
+  interno di una tupla. Il codice della classe non deve essere modificato.
+```
+- [esame_2.py](2_decorators/esame_2.py)
+
+```text
+Scrivere nel file un decorator factory DecoratorFactF che prende in input un valore v e restituisce un decoratore di
+funzione che modifica il comportamento della funzione decorata come segue:
+- se la funzione è invocata con tutti gli argomenti di tipo uguale a quello di v allora la funzione restituisce lo
+  stesso valore che avrebbe restituito la funzione originaria;
+- se uno o più argomenti sono di tipo diverso da quello di v allora la funzione restituisce il valore che la funzione
+  originaria avrebbe restituito se fosse stata invocata solo su tutti gli argomenti dello stesso tipo di v;
+- se la funzione originaria lancia un'eccezione, questa deve essere lanciata anche dalla funzione decorata.
+```
 - [intercorso1_1.py](2_decorators/intercorso1_1.py)
 
 ```text
@@ -166,6 +185,13 @@ scrivere il codice per fare altro oltre a quanto richiesto
 ```text
 Ridefiniscimi il comportamento della classe Stringa (str) in questo modo:
 - attraverso una sua classe figlia in cui, utilizzando __new__ ridefinisca il comportamento della classe String ottenendo la stringa in Uppercase
+```
+- [esame_1.py](3__new__and__init__/esame_1.py)
+
+```text
+Scrivere nel file la classe MySet che estende frozenset in modo tale che quando si crea l'istanza di MySet, l'istanza
+creata contenga solo gli elementi di tipo int dell'oggetto iterabile passato come argomento a MySet(). Se MySet() non
+prende input niente, l'istanza creata è vuota.
 ```
 
 ---
