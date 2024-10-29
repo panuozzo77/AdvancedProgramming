@@ -193,6 +193,13 @@ Scrivere nel file la classe MySet che estende frozenset in modo tale che quando 
 creata contenga solo gli elementi di tipo int dell'oggetto iterabile passato come argomento a MySet(). Se MySet() non
 prende input niente, l'istanza creata è vuota.
 ```
+- [intercorso1_StrangeClass.py](3__new__and__init__/intercorso1_StrangeClass.py)
+
+```text
+Fornire la classe StrangeClass che funziona in modo tale che la seconda istanza creata sia identica alla prima,
+la quarta sia identica alla terza e così via. Istanze vengono considerate identiche se nascono identiche e lo restano
+durante la loro intera vita
+```
 
 ---
 ## [4_generators](4_generators)
@@ -252,6 +259,31 @@ Scrivere un generatore che data una lista la restituisce al contrario (?)
         - In caso contrario non vengono generati altri elementi e le invocazioni successive di next causano un'eccezione
     - Se L=[2, 8, 4, 'a', 3] allora le prime con le prime 4 invocazioni di next otteniamo 2 4 3 'a'
       mentre la quinta invocazione causa una StopIteration
+```
+- [intercorso1_decFact(L1L2).py](4_generators/intercorso1_decFact(L1L2).py)
+
+```text
+Scrivere nel file esercizio3.py un decorator factory decFact(L1,L2) che prende in input una lista di stringhe e una
+stringa di oggetti e produce un decoratore di classe che fa in modo che le istanze della classe nascano non solo con le
+variabili di istanza aggiunte dal metodo __init__ della classe ma anche con le seguenti variabili di istanza:
+    - per ogni i = 1... len(1) una variabile con nome uguale a quello della i-esima stringa di L1 e valore uguale
+      all'i-esimo oggetto di L2. Nel caso in cui __init__ della classe originaria aggiungeva già una variabile di
+      istanza con nome uguale all'i-esima stringa di L1 allora il valore della variabile deve essere quello assegnato da
+      __init__ della classe originaria.
+```
+- [intercorso1_generaElementi.py](4_generators/intercorso1_generaElementi.py)
+
+```text
+Scrivere nel file esercizio1.py una funzione generatrice generaElementi che prende in input una lista L di elementi a
+due a 2 distinti (Non c'è bisogno di controllare che siano distinti). Scandisce la lista nel seguente modo:
+- la prima volta che viene invocato next si ottiene il primo elemento della lista L[0]
+- per le invocazioni successive di next si ha il seguente comportamento:
+    - sia L[j] l'elemento generato con la più recente invocazione di next. Se L[j] è un intero k diverso da j e compreso
+      tra 1 e len(L)-1 allora la prossima invocazione di next restituisce L[k]. In caso contrario non vengano generati
+      altri elementi e le invocazioni successive di next causano un'eccezione.
+
+  ES: L=[2, 8, 4, 'a', 3] allora le prime con le prime 4 invocazioni di next otteniamo 2 4 3 'a' mentre la quinta
+  invovcazione causa StopIteration
 ```
 
 ---

@@ -151,6 +151,13 @@
     - [Metodi del Generatore](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#metodi-del-generatore)
     - [Yield from](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#yield-from)
 
+## 29_10 - Comportamentale - State.md
+
+- [Comportamentale - State](classNotes/29_10%20-%20Comportamentale%20-%20State.md#comportamentale---state)
+  - [Esempio](classNotes/29_10%20-%20Comportamentale%20-%20State.md#esempio)
+- [questo è il main](classNotes/29_10%20-%20Comportamentale%20-%20State.md#questo-è-il-main)
+    - [Classe Counter](classNotes/29_10%20-%20Comportamentale%20-%20State.md#classe-counter)
+
 ## Comportamentale - Mediator.md
 
 - [Comportamentale - Mediator](classNotes/Comportamentale%20-%20Mediator.md#comportamentale---mediator)
@@ -161,10 +168,6 @@
 
 - [Comportamentale - Observer](classNotes/Comportamentale%20-%20Observer.md#comportamentale---observer)
     - [Esempio](classNotes/Comportamentale%20-%20Observer.md#esempio)
-
-## Comportamentale - State.md
-
-- [Comportamentale - State](classNotes/Comportamentale%20-%20State.md#comportamentale---state)
 
 ## Comportamentale - Template Method.md
 
