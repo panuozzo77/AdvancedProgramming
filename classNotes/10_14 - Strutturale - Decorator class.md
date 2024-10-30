@@ -18,7 +18,7 @@ class C: ...
 C = decorator(C)
 ```
 
-## Esempio di utilizzo
+### Esempio di utilizzo
 
 Può essere impiegato per dotare automaticamente le classi con una variabile numInstances per contare le istanze. Si può usare lo stesso approccio per aggiungere altri dati.
 
@@ -149,7 +149,7 @@ class Other(Spam):
 >>> print(sub.numInstances)
 1
 ```
-
+## Ridefinire costruttori, esempio **\_\_newInit__**
 Qui invece abbiamo ridefinito il costruttore, utilizzandone ben 2 in una sola chiamata, osserviamo bene:
 
 ```python
@@ -202,7 +202,7 @@ Possiamo vedere che ogni classe possiede una propria variabile numInstances ma, 
 
 ---
 
-## Considerazioni sul ridefinire il costruttore
+### Considerazioni sul ridefinire il costruttore
 
 count pone oldinit=aClass.__init__ e poi definisce la funzione __newInit__ in modo che invochi oldInit e non aClass.__init__. 
 Se __newInit__ avesse invocato aClass.__init__ allora, nel momento in cui avessimo creato un’istanza di una delle classi decorate con count, il metodo __init__ della classe (rimpiazzato da __newInit__) avrebbe lanciato l’eccezione RecursionError.

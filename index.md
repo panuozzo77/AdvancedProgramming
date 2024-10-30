@@ -16,14 +16,14 @@
   - [Classe set](classNotes/09_24.md#classe-set)
   - [classe frozenset](classNotes/09_24.md#classe-frozenset)
   - [classe dict](classNotes/09_24.md#classe-dict)
-  - [oggetti hashable](classNotes/09_24.md#oggetti-hashable)
+  - [Oggetti hashable](classNotes/09_24.md#oggetti-hashable)
   - [shallow vs deep copy](classNotes/09_24.md#shallow-vs-deep-copy)
   - [espressioni ed operatori](classNotes/09_24.md#espressioni-ed-operatori)
   - [Libri](classNotes/09_24.md#libri)
   - [Blocchi di codice](classNotes/09_24.md#blocchi-di-codice)
   - [clausola else e cicli](classNotes/09_24.md#clausola-else-e-cicli)
   - [if abbreviato](classNotes/09_24.md#if-abbreviato)
-  - [comprehension](classNotes/09_24.md#comprehension)
+  - [Comprehension](classNotes/09_24.md#comprehension)
     - [Doppia Comprehension](classNotes/09_24.md#doppia-comprehension)
 
 ## 09_30.md
@@ -41,7 +41,7 @@
 
   - [Parametri Keyword](classNotes/10_01.md#parametri-keyword)
   - [L'operatore **](classNotes/10_01.md#loperatore-**)
-  - [Riassumendo](classNotes/10_01.md#riassumendo)
+    - [Riassumendo](classNotes/10_01.md#riassumendo)
   - [Annotazioni](classNotes/10_01.md#annotazioni)
 - [esempio](classNotes/10_01.md#esempio)
   - [Funzioni come parametro di funzioni](classNotes/10_01.md#funzioni-come-parametro-di-funzioni)
@@ -56,6 +56,16 @@
   - [Namespace](classNotes/10_01.md#namespace)
   - [Moduli](classNotes/10_01.md#moduli)
   - [La variabile \_\_name__](classNotes/10_01.md#la-variabile-\_\_name__)
+  - [Package](classNotes/10_01.md#package)
+  - [Object Oriented Programming](classNotes/10_01.md#object-oriented-programming)
+    - [Ereditarietà](classNotes/10_01.md#ereditarietà)
+
+## 10_02 - Introduzione ai Design Pattern.md
+
+- [Cos’è un Design Pattern](classNotes/10_02%20-%20Introduzione%20ai%20Design%20Pattern.md#cos’è-un-design-pattern)
+  - [Caratterizzazione](classNotes/10_02%20-%20Introduzione%20ai%20Design%20Pattern.md#caratterizzazione)
+    - [Elenco dei Design Pattern](classNotes/10_02%20-%20Introduzione%20ai%20Design%20Pattern.md#elenco-dei-design-pattern)
+  - [Classificazione](classNotes/10_02%20-%20Introduzione%20ai%20Design%20Pattern.md#classificazione)
 
 ## 10_02 - Strutturale - Decorator function.md
 
@@ -68,6 +78,7 @@
 ## 10_07.md
 
   - [Classi in Python](classNotes/10_07.md#classi-in-python)
+  - [Attributi di classe e Attributi di istanza](classNotes/10_07.md#attributi-di-classe-e-attributi-di-istanza)
   - [Costruttori in Python](classNotes/10_07.md#costruttori-in-python)
   - [Metodi di una classe](classNotes/10_07.md#metodi-di-una-classe)
   - [Assegnamenti dinamici](classNotes/10_07.md#assegnamenti-dinamici)
@@ -81,7 +92,7 @@
 ## 10_08.md
 
   - [Ereditarietà](classNotes/10_08.md#ereditarietà)
-  - [Utilizzo metodo classi base](classNotes/10_08.md#utilizzo-metodo-classi-base)
+  - [Utilizzo metodo classi base con __super()__](classNotes/10_08.md#utilizzo-metodo-classi-base-con-__super()__)
   - [Ereditarietà Multipla e Method Resolution Order (MRO)](classNotes/10_08.md#ereditarietà-multipla-e-method-resolution-order-(mro))
   - [Attributo __bases__](classNotes/10_08.md#attributo-__bases__)
   - [Funzioni Built-In](classNotes/10_08.md#funzioni-built-in)
@@ -89,7 +100,7 @@
 - [Create an instance of class D and call the stampa method](classNotes/10_08.md#create-an-instance-of-class-d-and-call-the-stampa-method)
   - [Iteratori](classNotes/10_08.md#iteratori)
     - [Gestire l'eccezione](classNotes/10_08.md#gestire-leccezione)
-  - [Generatori](classNotes/10_08.md#generatori)
+- [Generatori](classNotes/10_08.md#generatori)
 - [versione migliorata con gestione dell'eccezione:](classNotes/10_08.md#versione-migliorata-con-gestione-delleccezione:)
   - [Superclassi Astratte](classNotes/10_08.md#superclassi-astratte)
 - [codice analogo, vedi differenza tra assert e raise](classNotes/10_08.md#codice-analogo,-vedi-differenza-tra-assert-e-raise)
@@ -99,9 +110,10 @@
 ## 10_14 - Strutturale - Decorator class.md
 
   - [Decoratori di Classe](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#decoratori-di-classe)
-  - [Esempio di utilizzo](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#esempio-di-utilizzo)
+    - [Esempio di utilizzo](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#esempio-di-utilizzo)
   - [Class Decorator e Costruttori](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#class-decorator-e-costruttori)
-  - [Considerazioni sul ridefinire il costruttore](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#considerazioni-sul-ridefinire-il-costruttore)
+  - [Ridefinire costruttori, esempio **\_\_newInit__**](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#ridefinire-costruttori,-esempio-**\_\_newinit__**)
+    - [Considerazioni sul ridefinire il costruttore](classNotes/10_14%20-%20Strutturale%20-%20Decorator%20class.md#considerazioni-sul-ridefinire-il-costruttore)
 
 ## 10_14.md
 
@@ -118,6 +130,9 @@
   - [Attributi Proprietà](classNotes/10_15.md#attributi-proprietà)
   - [Class Decorator e Proprietà](classNotes/10_15.md#class-decorator-e-proprietà)
   - [Class Decorator vs Derivazioni di Classi](classNotes/10_15.md#class-decorator-vs-derivazioni-di-classi)
+    - [Esercizio](classNotes/10_15.md#esercizio)
+- [Esempio di utilizzo del decoratore](classNotes/10_15.md#esempio-di-utilizzo-del-decoratore)
+- [Creiamo un'istanza di MiaClasse](classNotes/10_15.md#creiamo-unistanza-di-miaclasse)
 
 ## 21_10 - 22_10 - Strutturale - Proxy.md
 
@@ -129,7 +144,8 @@
 
 - [Creazionale - Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#creazionale---singleton)
     - [FunFact su __getattr__ e __getattribute__](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
-    - [Esempio di pattern Singleton: la classe Borg](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
+  - [Esempio di pattern Singleton: la classe Borg](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
+  - [\_\_new__ e \_\_init__](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#\_\_new__-e-\_\_init__)
     - [Secondo il Libro](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#secondo-il-libro)
     - [Module-Level Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module-level-singleton)
 - [module1.py](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module1py)
@@ -141,8 +157,12 @@
     - [Classe NullHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-nullhandler)
     - [Classe MouseHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-mousehandler)
     - [Classe DebugHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-debughandler)
-    - [Esempio Basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
-    - [Esempio Precedente basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-precedente-basato-su-coroutine)
+  - [Esempio Basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
+    - [Esempio completo con Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-completo-con-coroutine)
+- [Coroutine decorator](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#coroutine-decorator)
+- [Define the event pipeline using coroutines](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#define-the-event-pipeline-using-coroutines)
+- [Initialize the handlers in a pipeline](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#initialize-the-handlers-in-a-pipeline)
+- [The order of handlers can be adjusted as needed.](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#the-order-of-handlers-can-be-adjusted-as-needed)
 
 ## 28_10 - Generatori e Coroutine.md
 

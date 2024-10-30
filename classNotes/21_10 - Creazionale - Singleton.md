@@ -1,14 +1,12 @@
 # Creazionale - Singleton
 
 Il pattern Singleton è un pattern creazionale ed è usato quando abbiamo bisogno di una classe che ha un’unica istanza che è la sola ad essere usata dal programma. È utile nelle seguenti situazioni:
-
 - Controllare l’accesso concorrente ad una risorsa condivisa.
 - Se si ha bisogno di un punto globale di accesso per la risorsa da parti differenti del sistema.
 - Quando si ha bisogno di un unico oggetto di una certa classe.
 
 Implementazioni:
-
-- Spooler di stampa.****
+- Spooler di stampa.
 - Gestione connessioni ai database.
 - Trovare e memorizzare informazioni su un file di configurazione esterno.
 
@@ -60,15 +58,15 @@ print(id(s2), s2.spam())
 
 ### FunFact su __getattr__ e __getattribute__
 
-- Quando si accede ad un attributo di un’istanza di una classe viene invocato il metodo object.__getattribute__(self, name).
-    - se __getattribute__ non è definito ma è implementato __getattr__ o l’esecuzione di __getattribute__lancia AttributeError allora esegue __getattr__().
-- object.__getattr__(self, name) restituisce il valore dell’attributo o lancia l’eccezione AttributeError
-- L’implementazione di __getattribute__() deve sempre invocare il metodo della classe base usando lo stesso nome per evitare la ricorsione infinita.
+- Quando si accede ad un attributo di un’istanza di una classe viene invocato il metodo object.\_\_getattribute__(self, name).
+    - se \_\_getattribute__ non è definito ma è implementato \_\_getattr__ o l’esecuzione di \_\_getattribute__ lancia AttributeError allora esegue \_\_getattr__().
+- object.\_\_getattr__(self, name) restituisce il valore dell’attributo o lancia l’eccezione AttributeError
+- L’implementazione di \_\_getattribute__() deve sempre invocare il metodo della classe base usando lo stesso nome per evitare la ricorsione infinita.
 
-### Esempio di pattern Singleton: la classe Borg
+## Esempio di pattern Singleton: la classe Borg
 
 - Nella classe Borg tutte le istanze sono diverse ma condividono lo stesso stato.
-- Lo stato è condiviso dall’attributo shared_state e tutte le nuove istanze di Borg avranno lo stesso stato così come è definito dal metodo __new__
+- Lo stato è condiviso dall’attributo shared_state e tutte le nuove istanze di Borg avranno lo stesso stato così come è definito dal metodo \_\_new__
 - In genere, lo stato di un’istanza è memorizzato nel dizionario __dict__ proprio dell’istanza. Nel codice in basso assegnamo la variabile di classe shared_state e tutte le istanze create
 
 ```python
@@ -82,7 +80,7 @@ class Borg():
 
 #eseguiamo
 
-class Child(borg):
+class Child(Borg):
 	pass
 
 >>borg = Borg()
@@ -95,7 +93,7 @@ False
 I'm the only one var
 ```
 
-Se volessi definire una sottoclasse di Borg con un altro stato condiviso dobbiamo resettare _shared_state nella sottoclasse come segue
+Se volessi definire una sottoclasse di Borg con un altro stato condiviso dobbiamo resettare _shared_state nella sottoclasse come segue:
 
 ```python
 class AnotherChild(Borg):
@@ -105,6 +103,16 @@ class AnotherChild(Borg):
 >>another_child.only_one_var
 AttributeError: has no attribute 'shared_state'
 ```
+## \_\_new__ e \_\_init__
+- \_\_new__ crea un oggetto e lo restituisce
+  - solitamente si invoca il metodo \_\_new__ della superclasse con super(currentclass, cls).\_\_new__(cls, ...) e prima della restituzione si modifica l'istanza appena creata.
+- \_\_init__ inizializza le variabili dell'istanza.
+- Quando noi creiamo un'istanza di una classe, invochiamo implicitamente prima \_\_new__ poi \_\_init__.
+  - Infatti, se \_\_new__ restituisce un'istanza di cls allora viene invocato il metodo \_\_init__ con self impostato all'istanza appena generata. Gli argomenti di \_\_new__ e \_\_init__ sono gli stessi.
+- \_\_new__ accetta 'cls' come primo parametro, l'istanza deve ancora essere creata.
+  - per tale ragione viene utilizzato per la modifica di classi o sottoclassi di tipi immutabili, modificandone il loro comportamento.
+- \_\_init__ accetta self come primo parametro.
+
 
 ### Secondo il Libro
 

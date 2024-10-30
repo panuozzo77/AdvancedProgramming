@@ -10,8 +10,8 @@
 
 ### Il Pattern Decorator (è una funzione)
 
-- Un decoratore *di funzione* è una funzione che ha come unico argomento una **funzione** e restituisce una funzione con lo stesso nome della funzione originale ma con ulteriori funzionalità.
-- Un decoratore *di classe* è una funzione che ha come unico argomento una **classe** e restituisce una classe con lo stesso nome della classe originale ma con funzionalità aggiuntive.
+- Un decoratore **__di funzione__** è una funzione che ha come unico argomento una **funzione** e restituisce una funzione con lo stesso nome della funzione originale ma con ulteriori funzionalità.
+- Un decoratore **__di classe__** è una funzione che ha come unico argomento una **classe** e restituisce una classe con lo stesso nome della classe originale ma con funzionalità aggiuntive.
     - I decoratori di classe possono a volte essere utilizzati come alternativa alla creazione di sottoclassi.
 - In Python c’è un supporto built-in per i decoratori di funzioni e per i decoratori di classe
 
@@ -63,10 +63,10 @@
 
 ### Problema di Documentazione del codice
 
-- Una funzione decoratore avrà il valore dell’attributo __**name__** settato a **wrapper** invece che con il nome originale della funzione.
+- Una funzione decoratore avrà il valore dell’attributo **\_\_name__** settato a **wrapper** invece che con il nome originale della funzione.
 - Non ha docstring anche nel caso in cui la funzione originale abbia una docstring!
-- Attraverso un ulteriore decoratore @functools.wraps per decorare la funzione wrapper possiamo assicurarci che gli attributi __name__ e __doc__ della funzione decorat contengano rispettivamente il nome e la docstring della funzione originale.
-- È sempre consigliato usare il decoratore @functools.wrap dal momento che ci assicura che
+- Attraverso un ulteriore decoratore **@functools.wraps** per decorare la funzione wrapper possiamo assicurarci che gli attributi \_\_name__ e \_\_doc__ della funzione decorata contengano rispettivamente il nome e la docstring della funzione originale.
+- È sempre consigliato usare il decoratore @functools.wrap dal momento che ci assicura che:
     - nei traceback vengano visualizzati i nomi corretti delle funzioni
     - E si possa accedere alle docstring delle funzioni originali
 

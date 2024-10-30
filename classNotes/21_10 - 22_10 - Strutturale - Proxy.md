@@ -52,29 +52,30 @@ p.f(); p.g(); p.h()
 
 ```python
 class ImageProxy:
+
 	def __init__(self, ImageClass, width=None, height=None, filename=None):
-		assert (width is not None and height is not None) or filename is not None
-	 self.Image = ImageClass
-	 self.commands = []
-	if filename is not None:
-	 self.load(filename)
-	else:
-	 self.commands = [(self.Image, width, height)]
+	    assert (width is not None and height is not None) or filename is not None
+        self.Image = ImageClass
+        self.commands = []
+        if filename is not None:
+            self.load(filename)
+        else:
+            self.commands = [(self.Image, width, height)]
 
 	def load(self, filename):
-	 self.commands = [(self.Image, None, None, filename)]
+        self.commands = [(self.Image, None, None, filename)]
      
 	def set_pixel(self, x, y, color):
-	 self.commands.append((self.Image.set_pixel, x, y, color))
+        self.commands.append((self.Image.set_pixel, x, y, color))
      
 	def line(self, x0, y0, x1, y1, color):
-	 self.commands.append((self.Image.line, x0, y0, x1, y1, color))
+        self.commands.append((self.Image.line, x0, y0, x1, y1, color))
      
 	def rectangle(self, x0, y0, x1, y1, outline=None, fill=None):
-	 self.commands.append((self.Image.rectangle, x0, y0, x1, y1, outline, fill))
+        self.commands.append((self.Image.rectangle, x0, y0, x1, y1, outline, fill))
      
 	def ellipse(self, x0, y0, x1, y1, outline=None, fill=None):
-	 self.commands.append((self.Image.ellipse, x0, y0, x1, y1, outline, fill))
+        self.commands.append((self.Image.ellipse, x0, y0, x1, y1, outline, fill))
 
 	def save(self, filename=None):
 		command = self.commands.pop[0] # salvo tutta la tupla dei comandi
