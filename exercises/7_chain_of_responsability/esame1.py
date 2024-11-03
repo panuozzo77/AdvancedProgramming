@@ -1,5 +1,5 @@
 """ 
-
+2 Febbraio 2022
 Scrivere nel file esercizio1.py una funzione che prende in input una sequenza di richieste
 (numeri) e passa ciascuna richiesta ad una catena di gestori ciascuno dei quali e` una
 coroutine.

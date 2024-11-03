@@ -1,4 +1,6 @@
-"""Definire un decoratore di classe che permette alla classe decorata di contare le sue istanze. """
+"""
+Definire un decoratore di classe che permette alla classe decorata di contare le sue istanze. \
+"""
 
 
 def ContaIstanz(aClass):

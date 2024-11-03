@@ -1,3 +1,7 @@
+"""
+18 Febbraio 2020
+Fornire alla classe C con un Decorator Factory una funzione che permetta di elencare le variabili in C di tipo t attraverso un generatore
+"""
 def decoratorFactory(t):
     def decoratoreDiClasse(cls):
         def elencaVariabili(self):

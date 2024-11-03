@@ -1,5 +1,7 @@
-"""Scrivere una funzione che prende in input una lista L e restituisce una lista di |L|!
-liste in cui ciascuna lista contiene una diversa permutazione degli elementi della lista input L"""
+"""
+Scrivere una funzione che prende in input una lista L e restituisce una lista di |L|! liste in cui ciascuna lista
+contiene una diversa permutazione degli elementi della lista input L
+"""
 
 
 def permute1(seq):

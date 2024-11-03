@@ -1,4 +1,5 @@
 """
+2 Febbraio 2022
 Scrivere nel file esercizio2.py un decoratore di classe decoraClasse
 che aggiunge alla classe
 decorata il metodo conQualiArgomenti che restituisce una tupla contenente

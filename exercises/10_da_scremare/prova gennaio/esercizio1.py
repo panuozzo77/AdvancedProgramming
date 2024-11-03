@@ -1,5 +1,4 @@
 """
-
 Scrivere nella classe C, fornita nel file esercizio1.py, un metodo di classe aggiungiProprieta che
 per ciascuna variabile di classe di C di tipo str, crea una property con lo stesso nome della
 variabile.
@@ -7,8 +6,6 @@ Il setter della property deve effettuare l’assegnamento solo se il valore da a
 è una stringa. In caso contrario deve lanciare TypeError con argomento la stringa “Non e`
 possibile assegnare {} alla variabile {}” dove al posto delle parentesi graffe devono comparire il
 valore e il nome passati al setter.
-
-
 """
 
 class C:

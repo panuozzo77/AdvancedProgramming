@@ -1,5 +1,7 @@
-"""Scrivere una funzione che prende in input un intero positivo ne restituisce e produce un generatore
-degli interi  0, 1, 3, 6,10,... . In altre parole, l’i-esimo elemento  e`(0+1+2+...+i-1)"""
+"""
+Scrivere una funzione che prende in input un intero positivo ne restituisce e produce un generatore 'sommatoria'
+degli interi  0, 1, 3, 6,10,... ovvero da 0 a n-1
+"""
 
 
 def sommatoria(n):

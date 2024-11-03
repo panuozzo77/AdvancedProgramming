@@ -1,5 +1,7 @@
-"""Scrivere una classe che contiene un metodo che restituisce il numero d'invocazioni degli altri
-metodi della classe. Il codice dei suddetti metodi non deve essere modificato."""
+"""
+Scrivere una classe che contiene un metodo che restituisce il numero d'invocazioni degli altri
+metodi della classe. Il codice dei suddetti metodi non deve essere modificato.
+"""
 
 
 def Contatore(funcD, funcU):

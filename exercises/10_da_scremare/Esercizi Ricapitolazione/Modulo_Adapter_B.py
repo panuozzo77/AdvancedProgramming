@@ -1,4 +1,4 @@
-import EsercizioRecap6ImportTechRufy
+import Modulo_Adapter_A
 
 
 class Adapter:

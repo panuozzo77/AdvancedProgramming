@@ -1,5 +1,7 @@
-"""Definire un decoratore di funzione che trasforma una funzione che prende in input un numero variabile di numeri in una
-funzione che prende in input una lista e opera solo sugli elementi della lista di tipo float, int e str convertiti in int."""
+"""
+Definire un decoratore di funzione che trasforma una funzione che prende in input un numero variabile di numeri in una
+funzione che prende in input una lista e opera solo sugli elementi della lista di tipo float, int e str convertiti in int.
+"""
 
 
 def DecConvertitore(funz):

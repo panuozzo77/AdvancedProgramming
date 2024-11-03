@@ -1,3 +1,7 @@
+"""
+Fornire un Decorator Factory di classe che permetta di contare il numero di invocazioni delle funzioni specificate senza
+modificare il comportamento delle funzioni.
+"""
 from functools import wraps
 
 

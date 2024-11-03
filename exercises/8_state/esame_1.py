@@ -1,4 +1,5 @@
 """
+2 Febbraio 2022
 Completare l’implementazione della classe UtenzeAbitazione nel file esercizio3.py in modo
 che le sue istanze possano essere nello stato ON oppure nello stato OFF.
 Oltre ai metodi gia` forniti, l’interfaccia “pubblica” della classe deve contenere i metodi
@@ -41,7 +42,7 @@ class UtenzeAbitazione:
         self.stato=UtenzeAbitazione.OFF
     
         
-    def disponibilita_gas():
+    def disponibilita_gas(self):
         return UtenzeAbitazione.cl_serbatoio
 
     def get_nome(self):
