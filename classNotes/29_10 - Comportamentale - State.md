@@ -42,11 +42,12 @@
     	b.g()
     	b.h()
     	b.g()
-    	b = State_d(Implementation1())
-    
-    run(b)
+    	
+    b = State_d(Implementation1())  
+    run(b) # esecuzione con Implementation 1
+  
     b.changeImp(Implementation2())
-    run(b)
+    run(b) # cambiata Implementation 
     ```
     
 ## Esempio
