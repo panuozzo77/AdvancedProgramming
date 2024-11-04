@@ -50,7 +50,7 @@ FI=ForImpl() #assegno a variabile per potervi accedere poi in test
 class C:
     def __init__(self):
         self.nameVar=100
-c
+
 c=C()
 print("ora stampo nameVar sia usando getter della property di c sia accedendo direttamente all'attributo di FI:", c.nameVar,FI.nameVar)
 print("modifico nameVar con setter")

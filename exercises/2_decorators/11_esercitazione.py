@@ -11,25 +11,6 @@ come una funzione qualsiasi e â€œattaccatoâ€
 alla classe decorata così come abbiamo più volte visto durante le lezioni.
 """
 
-def decf(function):
-    def wrapper(*args, **kwargs):
-        counter = 0
-        counter += len(args) + len(kwargs)
-        if len(args) != 2:
-            raise TypeError("Function takes 2 arguments")
-        else:
-            fp = open('risultato.txt', 'a')
-            result = function(*args, **kwargs)
-            first_argument = None
-            if len(args) == 1 and len(kwargs) == 1 or len(args) == 2:
-                first_argument = args[0]
-            if (len(kwargs) == 2):
-                first_argument = kwargs[0]
-            fp.write(f'{first_argument} {result}')
-            fp.close()
-            return result
-    return wrapper
-
 def decFact(n : int):
     def decClass(cls):
 
@@ -37,7 +18,7 @@ def decFact(n : int):
             def wrapper(*args, **kwargs):
                 counter = 0
                 counter += len(args) + len(kwargs)
-                if len(args) != n:
+                if counter != n:
                     raise TypeError(f"Function takes {n} arguments")
                 return function(*args, **kwargs)
 
@@ -81,9 +62,15 @@ except TypeError:
         print("g e` stata invocata con un numero di argomenti diverso da tre")
 
 print("\ninvoco g(1,2,3)")
-g(1,2,3)
+try:
+    g(1,2,3)
+except TypeError:
+    pass
 print("\ninvoco g(x=2,j=6,k=3)")
-g(x=2,j=6,k=3)
+try:
+    g(x=2,j=6,k=3)
+except TypeError:
+    print('eccezione!')
 
 
 h=NewClass2.decf(f)
@@ -106,4 +93,7 @@ except TypeError:
         print("h e` stata invocata un numero di argomenti diverso da zero")
 
 print("\ninvoco h()")
-h()
+try:
+    h()
+except TypeError:
+    print("h e` stata invocata un numero di argomenti diverso da zero")
