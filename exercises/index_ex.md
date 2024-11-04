@@ -50,6 +50,7 @@ variabili di classe e non di istanza.
   amministratori e il totale di impiegati (può essere maggiore della somma di tecnici e amministratori, in quanto è
   possibile avere impiegati 'generici')
 ```
+- [esempi.py](1_python_standard/esempi.py)
 - [intercorso1_1.py](1_python_standard/intercorso1_1.py)
 
 ```text
@@ -63,6 +64,33 @@ variabili di classe e non di istanza.
 ---
 ## [2_decorators](2_decorators)
 
+- [10_esercitazione.py](2_decorators/10_esercitazione.py)
+
+```text
+Esercitazione Pre-Prova-Intercorso del 2024-11-04
+Esercizio 2 (gia` svolto)
+Scrivere  il decoratore di funzione decf che fa in modo
+che venga lanciata l'eccezione TypeError se il numero di argomenti è diverso da 2.
+Altrimenti, se la funzione decorata restituisce un risultato questo viene aggiunto insieme al valore del
+primo argomento in un file di nome risultato.txt.
+
+Suggerimento: Ricordatevi di convertire a stringa il valore del primo argomento e il risultato quando li scrivete
+nel file e di aprire il file in modo da non cancellare quanto scritto precedentemente nel file.
+```
+- [11_esercitazione.py](2_decorators/11_esercitazione.py)
+
+```text
+Esercitazione Pre-Prova-Intercorso del 2024-11-04
+Esercizio 3
+Scrivere un decorator factory decFact  che ha come argomento un intero n e produce un decoratore di classe
+che dota la classe decorata di un decoratore di funzione simile a quello definito al punto 3 ma che,
+a differenza di quel decoratore, fa in modo che l'eccezione venga lanciata se
+il numero di argomenti è diverso da n.
+
+Suggerimento: Ricordatevi che il decoratore di funzione può essere trattato
+come una funzione qualsiasi e â€œattaccatoâ€
+alla classe decorata così come abbiamo più volte visto durante le lezioni.
+```
 - [1_decf.py](2_decorators/1_decf.py)
 
 ```text
@@ -124,6 +152,22 @@ Scrivere un decorator factory che prende in input una classe ClasseConFF e due s
 decoratore di classe che decora una classe in modo tale che se viene invocata funz di fatto al posto di funz viene
 invocata la funzione ff della classe ClasseConFF
 ```
+- [9_esercitazione.py](2_decorators/9_esercitazione.py)
+
+```text
+"
+Esercitazione Pre-Prova-Intercorso del 2024-11-04
+Esercizio 1:
+Scrivere un decorator factory che prende in input un oggetto
+impl con valore di default None, una stringa name e restituisce un decoratore di
+classe che  aggiunge alla classe decorata:
+ - una variabile di classe substitute settata con impl
+ - una proprieta` di nome name che il cui getter e setter si comportano come segue:
+    - getter: se substitute è diverso da None allora il getter
+      prende il valore dell'attributo da substitute altrimenti lo prende da self
+    - setter: se  substitute è diverso da None allora il setter setta
+      il valore dell'attributo dall'istanza a cui fa riferimento substitute altrimenti setta quello di self.
+```
 - [esame_1.py](2_decorators/esame_1.py)
 
 ```text
@@ -142,6 +186,12 @@ funzione che modifica il comportamento della funzione decorata come segue:
 - se uno o più argomenti sono di tipo diverso da quello di v allora la funzione restituisce il valore che la funzione
   originaria avrebbe restituito se fosse stata invocata solo su tutti gli argomenti dello stesso tipo di v;
 - se la funzione originaria lancia un'eccezione, questa deve essere lanciata anche dalla funzione decorata.
+```
+- [esame_3.py](2_decorators/esame_3.py)
+
+```text
+18 Febbraio 2020
+Fornire alla classe C con un Decorator Factory una funzione che permetta di elencare le variabili in C di tipo t attraverso un generatore
 ```
 - [intercorso1_1.py](2_decorators/intercorso1_1.py)
 
@@ -180,6 +230,19 @@ Scrivere due classi Twin1 e Twin2 nessuna delle quali è derivata dell'altra. Le
 essere identiche e anche identiche alle istanze dell'altra classe (identiche vuol dire con stessi attributi). Non occorre
 scrivere il codice per fare altro oltre a quanto richiesto
 ```
+- [2_esercitazione.py](3__new__and__init__/2_esercitazione.py)
+
+```text
+Esercitazione Pre-Prova-Intercorso del 2024-11-04
+esercizio 5
+Scrivere nel file esercizio3.py, all'interno della classe C, due classi Gemella1 e Gemella2 nessuna delle quali è
+derivata dall'altra. Le istanze di ciascuna classe devono essere tra di loro identiche e anche identiche alle istanze
+dell'altra classe (identiche vuol dire stessi attributi).
+
+Scrivere poi sempre nello stesso file la classe Derivata che ha come classe base Gemella1. Le istanze di Derivata
+sono tra di loro identiche ma non condividono lo stesso stato di quelle di Gemella1 e Gemella2.
+Non occorre scrivere il codice per fare altro oltre a quanto richiesto.
+```
 - [2_my_string.py](3__new__and__init__/2_my_string.py)
 
 ```text
@@ -193,6 +256,17 @@ Scrivere nel file la classe MySet che estende frozenset in modo tale che quando 
 creata contenga solo gli elementi di tipo int dell'oggetto iterabile passato come argomento a MySet(). Se MySet() non
 prende input niente, l'istanza creata è vuota.
 ```
+- [esame_2.py](3__new__and__init__/esame_2.py)
+
+```text
+2 Febbraio 2022
+Scrivere nel file esercizio2.py un decoratore di classe decoraClasse
+che aggiunge alla classe
+decorata il metodo conQualiArgomenti che restituisce una tupla contenente
+• i valori di tutti gli argomenti posizionali (compresi quelli variabili)
+• le coppie (chiave, valore) di tutti gli argomenti keyword (compresi quelli variabili)
+passati all’ultima invocazione di __init__ .
+```
 - [intercorso1_StrangeClass.py](3__new__and__init__/intercorso1_StrangeClass.py)
 
 ```text
@@ -200,10 +274,36 @@ Fornire la classe StrangeClass che funziona in modo tale che la seconda istanza 
 la quarta sia identica alla terza e così via. Istanze vengono considerate identiche se nascono identiche e lo restano
 durante la loro intera vita
 ```
+- [intercorso1_decFact(L1L2).py](3__new__and__init__/intercorso1_decFact(L1L2).py)
+
+```text
+Scrivere nel file esercizio3.py un decorator factory decFact(L1,L2) che prende in input una lista di stringhe e una
+stringa di oggetti e produce un decoratore di classe che fa in modo che le istanze della classe nascano non solo con le
+variabili di istanza aggiunte dal metodo __init__ della classe ma anche con le seguenti variabili di istanza:
+    - per ogni i = 1... len(1) una variabile con nome uguale a quello della i-esima stringa di L1 e valore uguale
+      all'i-esimo oggetto di L2. Nel caso in cui __init__ della classe originaria aggiungeva già una variabile di
+      istanza con nome uguale all'i-esima stringa di L1 allora il valore della variabile deve essere quello assegnato da
+      __init__ della classe originaria.
+```
 
 ---
 ## [4_generators](4_generators)
 
+- [1_esercitazione.py](4_generators/1_esercitazione.py)
+
+```text
+Esercitazione Pre-Prova-Intercorso del 2024-11-04
+Esercizio 4.
+Scrivere una funzione generatrice generatore(L,X) che prende
+in input una lista L di numeri  e una lista di interi X. Indichiamo con 'li'
+l'i-esimo elemento di L e con 'xi' l'i-esimo elemento di X.
+(ovvero gli elementi di indice i-1 delle due liste rispettivamente).
+
+La funzione deve restituire un iteratore per il quale l'i-esima invocazione di next (con i<=lunghezza(X)),
+si comporta come segue:
+-   se 0 <= xi < lunghezza(L),  next restituisce il valore ottenuto sommando i primi xi valori di Li
+-   se xi <0 oppure xi >=lunghezza(L), next restituisce l'eccezione IndexError.
+```
 - [1_generatore.py](4_generators/1_generatore.py)
 
 ```text
@@ -246,31 +346,6 @@ Scrivere un generatore che data una lista la restituisce al contrario (?)
 - L’i-esimo elemento è (0+1+2+…+i-1). Se ad un certo punto raggiunge o supera il valore di sentinella
   allora l’iteratore smette di funzionare
 ```
-- [intercorso1_3.py](4_generators/intercorso1_3.py)
-
-```text
-- Scrivere nel file esercizio1.py una funzione generatrice generaElementi che prende in input una lista L di elementi
-  a due a due distinti e permette di ottenere un iteratore che scandisce gli elementi della lista nel seguente modo:
-    - la prima volta che viene invocato next si ottiene il primo elemento della lista L[0]
-    - per le invocazioni successive di next si ha il seguente comportamento:
-        - sia L[i] l'elemento generato con l’invocazione di next
-        - Se L[j] è un intero k diverso da j e compreso tra 1 e len(L)-1 allora la prossima invocazione di next
-          restituisce L[k]
-        - In caso contrario non vengono generati altri elementi e le invocazioni successive di next causano un'eccezione
-    - Se L=[2, 8, 4, 'a', 3] allora le prime con le prime 4 invocazioni di next otteniamo 2 4 3 'a'
-      mentre la quinta invocazione causa una StopIteration
-```
-- [intercorso1_decFact(L1L2).py](4_generators/intercorso1_decFact(L1L2).py)
-
-```text
-Scrivere nel file esercizio3.py un decorator factory decFact(L1,L2) che prende in input una lista di stringhe e una
-stringa di oggetti e produce un decoratore di classe che fa in modo che le istanze della classe nascano non solo con le
-variabili di istanza aggiunte dal metodo __init__ della classe ma anche con le seguenti variabili di istanza:
-    - per ogni i = 1... len(1) una variabile con nome uguale a quello della i-esima stringa di L1 e valore uguale
-      all'i-esimo oggetto di L2. Nel caso in cui __init__ della classe originaria aggiungeva già una variabile di
-      istanza con nome uguale all'i-esima stringa di L1 allora il valore della variabile deve essere quello assegnato da
-      __init__ della classe originaria.
-```
 - [intercorso1_generaElementi.py](4_generators/intercorso1_generaElementi.py)
 
 ```text
@@ -303,6 +378,15 @@ della classe MyProxy, di fatto viene invocato l'omonimo metodo di istanza di MyC
 - si assuma che __init__ di MyClass prenda in input un argomento x e che il comportamento dei suoi metodi di istanza
 dipenda dal valore di x passati a __init__
 ```
+- [2_proxiedclass.py](6_proxy/2_proxiedclass.py)
+
+```text
+Scrivere un decorator factory che prende in input una classe ProxiedClass e restituisce un decorator di classe
+myClassDecorator che prende in input una classe C e trasforma C in una classe Proxy della classe ProxiedClass.
+Ogni volta che si invoca un metodo di istanza della classe decorata di fatto si invoca il metodo omonimo di ProxiedClass.
+Si assuma che __init__ di ProxiedClass non riceva alcun argomento,eccezion fatta per self.
+NON FARE ALCUNA ASSUNZIONE SU PROXIEDCLASS
+```
 
 ---
 ## [7_chain_of_responsability](7_chain_of_responsability)
@@ -324,6 +408,66 @@ dipenda dal valore di x passati a __init__
   Default_Handler che stampa semplicemente
   "Richiesta {} gestita da Default_Handler: non è stato possibile gestire la richiesta"
 - Nelle suddette stampe, la lista nella richiesta deve comparire al posto delle parentesi graffe
+```
+- [esame1.py](7_chain_of_responsability/esame1.py)
+
+```text
+2 Febbraio 2022
+Scrivere nel file esercizio1.py una funzione che prende in input una sequenza di richieste
+(numeri) e passa ciascuna richiesta ad una catena di gestori ciascuno dei quali e` una
+coroutine.
+
+• Se il numero è compreso tra 0 e 100 allora la richiesta viene gestita dal gestore
+gestore_0_100 che stampa “Richiesta {} gestita da gestore_0_100”.
+• Se il numero è compreso tra 101 e 200 allora la richiesta viene gestita dal gestore
+gestore_101_200 che stampa “Richiesta {} gestita da gestore_101_200”.
+• Se il numero comincia con un numero negativo allora la richiesta viene gestita dal
+gestore gestore_negativo che smette di funzionare immediatamente dopo aver
+stampato “Richiesta {} gestita da gestore_negativo: la catena smette di funzionare”.
+• Se il numero è maggiore di 200, allora la richiesta viene gestita dal gestore
+gestoreDiDefault che stampa “Messaggio da gestoreDiDefault: non e` stato possibile
+gestire la richiesta {}".
+
+Se un gestore tenta di inviare una richiesta al suo successore e si accorge che questo
+ha smesso di funzionare allora anch’esso deve smettere di funzionare.
+NB: nelle suddette stampe la richiesta (il numero) deve comparire al posto delle parentesi
+graffe.
+```
+- [example.py](7_chain_of_responsability/example.py)
+
+---
+## [8_state](8_state)
+
+- [esame_1.py](8_state/esame_1.py)
+
+```text
+2 Febbraio 2022
+Completare l’implementazione della classe UtenzeAbitazione nel file esercizio3.py in modo
+che le sue istanze possano essere nello stato ON oppure nello stato OFF.
+Oltre ai metodi gia` forniti, l’interfaccia “pubblica” della classe deve contenere i metodi
+apri_acqua, accendi_riscaldamento, e get_consumi. Quando un’istanza è nello stato ON, i
+suddetti metodi si comportano come segue:
+• apri_acqua(num_cl) incrementa la variabile di istanza _contatore_acqua del numero
+num_cl specificato come argomento
+• accendi_riscaldamento(num_cl)
+o decrementa cl_serbatoio di un valore pari a num_cl se cl_serbatoio>num_cl;
+altrimenti usa tutto il gas disponibile, cioe` azzera cl_serbatoio.
+o aggiorna il registro in modo che la coppia del dizionario associata all’istanza
+abbia come valore il numero di cl di gas usati in totale fino a quel momento
+dall’abitazione.
+o se nel momento in cui viene invocato il metodo, cl_serbatoio è minore o uguale
+di num_cl (cio` include il caso in cui è inizialmente uguale a 0) allora il metodo
+dopo aver eventualmente eseguito i due punti precedenti, lancia ValueError in
+modo che venga visualizzata la stringa "Attenzione: il serbatoio condominiale e`
+vuoto".
+• il metodo di istanza get_consumi() restituisce una coppia in cui il primo elemento è il
+consumo di acqua dell’abitazione e il secondo elemento è il consumo di gas
+dell’abitazione fino a quel momento .
+
+Quando lo stato dell’istanza è OFF, i suddetti tre metodi non fanno niente e non restituiscono
+niente.
+Le utenze vengono attivate e disattivate dai metodi attiva_utenze e disattiva_utenze, gia`
+presenti nella classe insieme ai metodi __init__ , disponibilita_gas() e get_nome.
 ```
 
 ---
