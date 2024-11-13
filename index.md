@@ -134,60 +134,67 @@
 - [Esempio di utilizzo del decoratore](classNotes/10_15.md#esempio-di-utilizzo-del-decoratore)
 - [Creiamo un'istanza di MiaClasse](classNotes/10_15.md#creiamo-unistanza-di-miaclasse)
 
-## 21_10 - 22_10 - Strutturale - Proxy.md
+## 10_21 - 10_22 - Strutturale - Proxy.md
 
-- [Strutturale - Proxy](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#strutturale---proxy)
-- [esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#esempio-di-proxy-che-non-fa-nulla-in-particolare-se-non-utilizzare-esattamente-i-metodi-di-implementation)
-    - [Esempio di Virtual Proxy](classNotes/21_10%20-%2022_10%20-%20Strutturale%20-%20Proxy.md#esempio-di-virtual-proxy)
+- [Strutturale - Proxy](classNotes/10_21%20-%2010_22%20-%20Strutturale%20-%20Proxy.md#strutturale---proxy)
+- [esempio di proxy che non fa nulla in particolare se non utilizzare esattamente i metodi di Implementation](classNotes/10_21%20-%2010_22%20-%20Strutturale%20-%20Proxy.md#esempio-di-proxy-che-non-fa-nulla-in-particolare-se-non-utilizzare-esattamente-i-metodi-di-implementation)
+    - [Esempio di Virtual Proxy](classNotes/10_21%20-%2010_22%20-%20Strutturale%20-%20Proxy.md#esempio-di-virtual-proxy)
 
-## 21_10 - Creazionale - Singleton.md
+## 10_21 - Creazionale - Singleton.md
 
-- [Creazionale - Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#creazionale---singleton)
-    - [FunFact su __getattr__ e __getattribute__](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
-  - [Esempio di pattern Singleton: la classe Borg](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
-  - [\_\_new__ e \_\_init__](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#\_\_new__-e-\_\_init__)
-    - [Secondo il Libro](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#secondo-il-libro)
-    - [Module-Level Singleton](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module-level-singleton)
-- [module1.py](classNotes/21_10%20-%20Creazionale%20-%20Singleton.md#module1py)
+- [Creazionale - Singleton](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#creazionale---singleton)
+    - [FunFact su __getattr__ e __getattribute__](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#funfact-su-__getattr__-e-__getattribute__)
+  - [Esempio di pattern Singleton: la classe Borg](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#esempio-di-pattern-singleton:-la-classe-borg)
+  - [\_\_new__ e \_\_init__](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#\_\_new__-e-\_\_init__)
+    - [Secondo il Libro](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#secondo-il-libro)
+    - [Module-Level Singleton](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#module-level-singleton)
+- [module1.py](classNotes/10_21%20-%20Creazionale%20-%20Singleton.md#module1py)
 
-## 28_10 - Comportamentale - Chain of Responsability.md
+## 10_28 - Comportamentale - Chain of Responsability.md
 
-- [Comportamentale - Chain of Responsability](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#comportamentale---chain-of-responsability)
-    - [Esempio](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio)
-    - [Classe NullHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-nullhandler)
-    - [Classe MouseHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-mousehandler)
-    - [Classe DebugHandler](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-debughandler)
-  - [Esempio Basato su Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
-    - [Esempio completo con Coroutine](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-completo-con-coroutine)
-- [Coroutine decorator](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#coroutine-decorator)
-- [Define the event pipeline using coroutines](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#define-the-event-pipeline-using-coroutines)
-- [Initialize the handlers in a pipeline](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#initialize-the-handlers-in-a-pipeline)
-- [The order of handlers can be adjusted as needed.](classNotes/28_10%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#the-order-of-handlers-can-be-adjusted-as-needed)
+- [Comportamentale - Chain of Responsability](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#comportamentale---chain-of-responsability)
+    - [Esempio](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio)
+    - [Classe NullHandler](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-nullhandler)
+    - [Classe MouseHandler](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-mousehandler)
+    - [Classe DebugHandler](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#classe-debughandler)
+  - [Esempio Basato su Coroutine](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-basato-su-coroutine)
+    - [Esempio completo con Coroutine](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#esempio-completo-con-coroutine)
+- [Coroutine decorator](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#coroutine-decorator)
+- [Define the event pipeline using coroutines](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#define-the-event-pipeline-using-coroutines)
+- [Initialize the handlers in a pipeline](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#initialize-the-handlers-in-a-pipeline)
+- [The order of handlers can be adjusted as needed.](classNotes/10_28%20-%20Comportamentale%20-%20Chain%20of%20Responsability.md#the-order-of-handlers-can-be-adjusted-as-needed)
 
-## 28_10 - Generatori e Coroutine.md
+## 10_28 - Generatori e Coroutine.md
 
-- [Generatori e Coroutine](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#generatori-e-coroutine)
-  - [L'espressione Yield](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#lespressione-yield)
-    - [Metodi del Generatore](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#metodi-del-generatore)
-    - [Yield from](classNotes/28_10%20-%20Generatori%20e%20Coroutine.md#yield-from)
+- [Generatori e Coroutine](classNotes/10_28%20-%20Generatori%20e%20Coroutine.md#generatori-e-coroutine)
+  - [L'espressione Yield](classNotes/10_28%20-%20Generatori%20e%20Coroutine.md#lespressione-yield)
+    - [Metodi del Generatore](classNotes/10_28%20-%20Generatori%20e%20Coroutine.md#metodi-del-generatore)
+    - [Yield from](classNotes/10_28%20-%20Generatori%20e%20Coroutine.md#yield-from)
 
-## 29_10 - Comportamentale - State.md
+## 10_29 - Comportamentale - State.md
 
-- [Comportamentale - State](classNotes/29_10%20-%20Comportamentale%20-%20State.md#comportamentale---state)
-  - [Esempio](classNotes/29_10%20-%20Comportamentale%20-%20State.md#esempio)
-- [questo è il main](classNotes/29_10%20-%20Comportamentale%20-%20State.md#questo-è-il-main)
-    - [Classe Counter](classNotes/29_10%20-%20Comportamentale%20-%20State.md#classe-counter)
+- [Comportamentale - State](classNotes/10_29%20-%20Comportamentale%20-%20State.md#comportamentale---state)
+  - [Esempio](classNotes/10_29%20-%20Comportamentale%20-%20State.md#esempio)
+- [questo è il main](classNotes/10_29%20-%20Comportamentale%20-%20State.md#questo-è-il-main)
+    - [Classe Counter](classNotes/10_29%20-%20Comportamentale%20-%20State.md#classe-counter)
+    - [Il Design Pattern State: esercizio](classNotes/10_29%20-%20Comportamentale%20-%20State.md#il-design-pattern-state:-esercizio)
 
-## Comportamentale - Mediator.md
+## 11_12 - Comportamentale - Mediator.md
 
-- [Comportamentale - Mediator](classNotes/Comportamentale%20-%20Mediator.md#comportamentale---mediator)
-    - [Esempio](classNotes/Comportamentale%20-%20Mediator.md#esempio)
-    - [Esempio basato su Coroutine](classNotes/Comportamentale%20-%20Mediator.md#esempio-basato-su-coroutine)
+- [Comportamentale - Mediator](classNotes/11_12%20-%20Comportamentale%20-%20Mediator.md#comportamentale---mediator)
+    - [Esempio](classNotes/11_12%20-%20Comportamentale%20-%20Mediator.md#esempio)
+    - [Esempio basato su Coroutine](classNotes/11_12%20-%20Comportamentale%20-%20Mediator.md#esempio-basato-su-coroutine)
+    - [Esercizio su Mediator](classNotes/11_12%20-%20Comportamentale%20-%20Mediator.md#esercizio-su-mediator)
 
-## Comportamentale - Observer.md
+## 11_12 - Comportamentale - Observer.md
 
-- [Comportamentale - Observer](classNotes/Comportamentale%20-%20Observer.md#comportamentale---observer)
-    - [Esempio](classNotes/Comportamentale%20-%20Observer.md#esempio)
+- [Comportamentale - Observer](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#comportamentale---observer)
+    - [Esempio](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#esempio)
+      - [Classe Observed](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#classe-observed)
+      - [Classe SliderModel](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#classe-slidermodel)
+      - [Classe HistoryView](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#classe-historyview)
+      - [Classe LiveView](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#classe-liveview)
+- [Esercizio su Observer](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#esercizio-su-observer)
 
 ## Comportamentale - Template Method.md
 
