@@ -30,7 +30,7 @@ def create_index(root_folder):
 
     # Get all subdirectories and sort them with the numeric key
     subdirs = [d for d in os.listdir(root_folder) if os.path.isdir(os.path.join(root_folder, d))]
-    subdirs.remove('10_da_scremare')  # Exclude this directory
+    subdirs.remove('da_scremare')  # Exclude this directory
     subdirs.sort(key=numeric_key)  # Sort by the leading number
 
     # Generate the table of contents
