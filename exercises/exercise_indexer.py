@@ -1,4 +1,5 @@
 import os
+import re
 
 def get_file_comment(filepath):
     """Extract the first docstring (triple quotes) from a Python file."""
@@ -19,14 +20,25 @@ def get_file_comment(filepath):
 
     return None
 
+def numeric_key(name):
+    """Extracts the leading number from a directory name to use as the sorting key."""
+    match = re.match(r"(\d+)_", name)
+    return int(match.group(1)) if match else float('inf')  # Place non-matching items at the end
 
 def create_index(root_folder):
     index_content = "# Index of Python Exercises\n\n"
 
-    # Get all subdirectories and sort them
+    # Get all subdirectories and sort them with the numeric key
     subdirs = [d for d in os.listdir(root_folder) if os.path.isdir(os.path.join(root_folder, d))]
-    subdirs.remove('10_da_scremare')
-    subdirs.sort()
+    subdirs.remove('10_da_scremare')  # Exclude this directory
+    subdirs.sort(key=numeric_key)  # Sort by the leading number
+
+    # Generate the table of contents
+    index_content += "## Table of Contents\n\n"
+    for subdir_name in subdirs:
+        anchor_link = subdir_name.replace(" ", "-")  # Convert spaces for Markdown anchors
+        index_content += f"- [{subdir_name}](#{anchor_link})\n"
+    index_content += "\n---\n\n"
 
     # Process each subdirectory
     for subdir_name in subdirs:

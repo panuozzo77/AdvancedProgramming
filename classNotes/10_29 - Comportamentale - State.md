@@ -201,7 +201,8 @@ La classe è molto semplice.
                self.send = lambda *args : None
    ```
 
-### Il Design Pattern State: esercizio
+### Esercizio su State
+[esercizio_svolto](/exercises/8_state/1_esercizio_proposto.py)
 Immaginiamo che un bambino venga iscritto alla scuola media. Il bambino può essere in uno dei seguenti stati:
 a. iscritto: il bimbo è inizialmente iscritto al primo anno
 b. alSecondoAnno: il bimbo è promosso al secondo anno

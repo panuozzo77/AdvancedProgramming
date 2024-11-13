@@ -1,5 +1,20 @@
 # Index of Python Exercises
 
+## Table of Contents
+
+- [1_python_standard](#1_python_standard)
+- [2_decorators](#2_decorators)
+- [3__new__and__init__](#3__new__and__init__)
+- [4_generators](#4_generators)
+- [5_singleton](#5_singleton)
+- [6_proxy](#6_proxy)
+- [7_chain_of_responsability](#7_chain_of_responsability)
+- [8_state](#8_state)
+- [9_mediator](#9_mediator)
+- [10_observer](#10_observer)
+
+---
+
 ## [1_python_standard](1_python_standard)
 
 - [1_myDictionary.py](1_python_standard/1_myDictionary.py)
@@ -438,6 +453,22 @@ graffe.
 ---
 ## [8_state](8_state)
 
+- [1_esercizio_proposto.py](8_state/1_esercizio_proposto.py)
+
+```text
+Immaginiamo che un bambino venga iscritto alla scuola media. Il bambino può essere in uno dei seguenti stati:
+a. iscritto: il bimbo è inizialmente iscritto al primo anno
+b. alSecondoAnno: il bimbo è promosso al secondo anno
+c. alTerzoAnno: il bimbo è promosso al terzo anno
+d. diplomato: al termine del terzo, il bimbo consegue il diploma di scuola media.
+La classe Bambino ha il metodo succ() per passare allo stato successivo, il metodo pred() per passare a quello
+precedente (retrocesso in caso di debiti formativi non recuperati) e il metodo salta_anno() per saltare un anno (da
+iscritto si salta al terzo anno e dal secondo anno al diploma). Lo stato iscritto non ha stati che lo precedono;
+lo stato diplomato non ha stati che vengono dopo di esso.
+La classe Bambino ha anche un metodo stampaStato() per stampare lo stato del bambino.
+Scrivere la classe Bambino usando un approccio state-specific in cui lo stato del bambino è una proprietà. Non usare altre classi
+oltre la classe Bambino.
+```
 - [esame_1.py](8_state/esame_1.py)
 
 ```text
@@ -468,6 +499,54 @@ Quando lo stato dell’istanza è OFF, i suddetti tre metodi non fanno niente e 
 niente.
 Le utenze vengono attivate e disattivate dai metodi attiva_utenze e disattiva_utenze, gia`
 presenti nella classe insieme ai metodi __init__ , disponibilita_gas() e get_nome.
+```
+
+---
+## [9_mediator](9_mediator)
+
+- [1_esercizio_proposto.py](9_mediator/1_esercizio_proposto.py)
+
+```text
+Si considerino le classi Cane e Persona fornite nel file [mod.py](/exercises/9_mediator/mod.py) (nei file del team).
+Scrivere la classe Casa che contiene due cani e una persona (la padrona dei cani).
+- La classe Casa utilizza un mediatore per garantire che:
+  - a. Quando almeno uno dei due cani abbaia, venga impostato a True un flag di allerta (variabile self.allerta nella bozza di \_\_init__ fornita in [esercizio2.py](???)).
+  - b. Quando la padrona torna a casa, se il flag di allerta è True, verifica per ciascun cane se, tra l'ora in cui è tornata a casa e l'ora in cui il cane ha mangiato per l'ultima volta, sono trascorse più di 4 ore.
+    - In tal caso, dà da mangiare al cane.
+  - Se nessuno dei due cani ha abbaiato tra il momento in cui la padrona è uscita e quello in cui è tornata (il flag è False), allora non fa nulla al suo ritorno.
+
+  - Nota Bene: Può succedere che:
+    - il cane che abbaia non sia quello che ha fame,
+    - oppure che abbaiano entrambi ma solo uno dei due abbia fame,
+    - o ancora che almeno uno dei cani abbia abbaiato mentre nessuno dei due ha fame.
+  - Suggerimenti:
+    - Per ciascuno dei due punti, creare un callable: uno dei due deve essere associato ad entrambi i cani e l'altro deve essere associato alla padrona.
+    - La differenza in ore tra due orari, ora1 e ora2, si calcola così: (ora1 - ora2).total_seconds() / 60 / 60.
+```
+- [mod.py](9_mediator/mod.py)
+
+```text
+Modulo utilizzato per esercizio 1_esercizio_proposto.py
+```
+
+---
+## [10_observer](10_observer)
+
+- [1_esercizio_proposto.py](10_observer/1_esercizio_proposto.py)
+
+```text
+Scrivere una classe LaureaT_Student che possa essere osservata e che possieda i seguenti attributi che ne determinano lo stato:
+total_cfu: numero di CFU acquisiti.
+english_r: valore booleano impostato su False (valore predefinito) se e solo se lo studente non ha superato la prova di inglese.
+grades: dizionario degli esami sostenuti, in cui le chiavi corrispondono ai nomi degli esami e i valori ai voti ottenuti (nome dell'esame, voto).
+exam: una tupla del tipo definito di seguito:
+Exam = collections.namedtuple("Exam", "name cfu").
+Gli attributi total_cfu ed english_r sono accessibili direttamente tramite il loro nome e possono essere modificati con l'operatore =. L'attributo grades, invece, è modificabile attraverso il metodo add_grades, che accetta come primo argomento un oggetto di tipo Exam e come secondo argomento un intero che rappresenta il voto. Inoltre, è necessario implementare due observer: HistoryView e LiveView.
+HistoryView mantiene una lista di triple della forma (dizionario degli esami sostenuti, booleano che indica se l'esame di inglese è stato superato, data del cambiamento di stato). Ogni tripla viene creata quando l'oggetto LaureaT_Student cambia stato.
+LiveView esegue le seguenti stampe:
+print("Cambio stato: lo studente ha appena superato la prova di Inglese\n") se il cambiamento di stato è dovuto al superamento della prova di inglese.
+print("Cambio stato: lo studente ha superato un nuovo esame").
+print("Cambio stato: il numero di CFU è: ", student.total_cfu, "\n") se il cambiamento di stato è dovuto al superamento di un nuovo esame.
 ```
 
 ---

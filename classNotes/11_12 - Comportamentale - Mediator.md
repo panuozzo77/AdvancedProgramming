@@ -203,4 +203,19 @@ class Mediated:
 ```
 
 ### Esercizio su Mediator
-Si considerino le classi Cane e Persona fornite nel file mod.py (nei file del team). Scrivere la classe Casa che contiene due cani e una persona (la padrona dei cani). La classe Casa utilizza un mediatore per garantire che: a. Quando almeno uno dei due cani abbaia, venga impostato a True un flag di allerta (variabile self.allerta nella bozza di __init__ fornita in esercizio2.py). b. Quando la padrona torna a casa, se il flag di allerta è True, verifica per ciascun cane se, tra l'ora in cui è tornata a casa e l'ora in cui il cane ha mangiato per l'ultima volta, sono trascorse più di 4 ore. In tal caso, dà da mangiare al cane. Se nessuno dei due cani ha abbaiato tra il momento in cui la padrona è uscita e quello in cui è tornata (il flag è False), allora non fa nulla al suo ritorno. Nota Bene: Può succedere che il cane che abbaia non sia quello che ha fame, oppure che abbaiano entrambi ma solo uno dei due abbia fame, o ancora che almeno uno dei cani abbia abbaiato mentre nessuno dei due ha fame. Suggerimento: Per ciascuno dei due punti, creare un callable: uno dei due deve essere associato ad entrambi i cani e l'altro deve essere associato alla padrona. La differenza in ore tra due orari, ora1 e ora2, si calcola così: (ora1 - ora2).total_seconds() / 60 / 60. 
+[esercizio_svolto](/exercises/9_mediator/1_esercizio_proposto.py)
+Si considerino le classi Cane e Persona fornite nel file [mod.py](/exercises/9_mediator/mod.py) (nei file del team). 
+Scrivere la classe Casa che contiene due cani e una persona (la padrona dei cani). 
+- La classe Casa utilizza un mediatore per garantire che: 
+  - a. Quando almeno uno dei due cani abbaia, venga impostato a True un flag di allerta (variabile self.allerta nella bozza di \_\_init__ fornita in [esercizio2.py](???)). 
+  - b. Quando la padrona torna a casa, se il flag di allerta è True, verifica per ciascun cane se, tra l'ora in cui è tornata a casa e l'ora in cui il cane ha mangiato per l'ultima volta, sono trascorse più di 4 ore. 
+    - In tal caso, dà da mangiare al cane. 
+  - Se nessuno dei due cani ha abbaiato tra il momento in cui la padrona è uscita e quello in cui è tornata (il flag è False), allora non fa nulla al suo ritorno. 
+
+  - Nota Bene: Può succedere che: 
+    - il cane che abbaia non sia quello che ha fame, 
+    - oppure che abbaiano entrambi ma solo uno dei due abbia fame, 
+    - o ancora che almeno uno dei cani abbia abbaiato mentre nessuno dei due ha fame. 
+  - Suggerimenti: 
+    - Per ciascuno dei due punti, creare un callable: uno dei due deve essere associato ad entrambi i cani e l'altro deve essere associato alla padrona. 
+    - La differenza in ore tra due orari, ora1 e ora2, si calcola così: (ora1 - ora2).total_seconds() / 60 / 60. 
