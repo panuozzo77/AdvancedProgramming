@@ -177,7 +177,7 @@
   - [Esempio](classNotes/10_29%20-%20Comportamentale%20-%20State.md#esempio)
 - [questo è il main](classNotes/10_29%20-%20Comportamentale%20-%20State.md#questo-è-il-main)
     - [Classe Counter](classNotes/10_29%20-%20Comportamentale%20-%20State.md#classe-counter)
-    - [Il Design Pattern State: esercizio](classNotes/10_29%20-%20Comportamentale%20-%20State.md#il-design-pattern-state:-esercizio)
+    - [Esercizio su State](classNotes/10_29%20-%20Comportamentale%20-%20State.md#esercizio-su-state)
 
 ## 11_12 - Comportamentale - Mediator.md
 
@@ -196,30 +196,43 @@
       - [Classe LiveView](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#classe-liveview)
 - [Esercizio su Observer](classNotes/11_12%20-%20Comportamentale%20-%20Observer.md#esercizio-su-observer)
 
-## Comportamentale - Template Method.md
+## 11_19-1 - Creazionale - Prototype.md
 
-- [Comportamentale - Template Method](classNotes/Comportamentale%20-%20Template%20Method.md#comportamentale---template-method)
+- [Creazionale - Prototype](classNotes/11_19-1%20-%20Creazionale%20-%20Prototype.md#creazionale---prototype)
+  - [Tutte le metodologie usate per copiare:](classNotes/11_19-1%20-%20Creazionale%20-%20Prototype.md#tutte-le-metodologie-usate-per-copiare:)
+    - [Note su eval()](classNotes/11_19-1%20-%20Creazionale%20-%20Prototype.md#note-su-eval())
 
-## Creazionale - Factory Method.md
+## 11_19-2 - Strutturale - Flyweight.md
 
-- [Creazionale - Factory Method](classNotes/Creazionale%20-%20Factory%20Method.md#creazionale---factory-method)
-    - [Esempio](classNotes/Creazionale%20-%20Factory%20Method.md#esempio)
+- [Strutturale - Flyweight](classNotes/11_19-2%20-%20Strutturale%20-%20Flyweight.md#strutturale---flyweight)
+  - [\_\_slots__](classNotes/11_19-2%20-%20Strutturale%20-%20Flyweight.md#\_\_slots__)
+  - [Confronto memoria risparmiata con \_\_slots__](classNotes/11_19-2%20-%20Strutturale%20-%20Flyweight.md#confronto-memoria-risparmiata-con-\_\_slots__)
+    - [Ulteriore implementazione con memoria persistente](classNotes/11_19-2%20-%20Strutturale%20-%20Flyweight.md#ulteriore-implementazione-con-memoria-persistente)
 
-## Creazionale - Prototype.md
+## 11_19-3 - Strutturale - Facade.md
 
-- [Creazionale - Prototype](classNotes/Creazionale%20-%20Prototype.md#creazionale---prototype)
+- [Strutturale - Facade o Context Manager](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#strutturale---facade-o-context-manager)
+- [Context Manager](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#context-manager)
+  - [Come funziona lo Statement With](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#come-funziona-lo-statement-with)
+  - [Context Manager ed Eccezioni](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#context-manager-ed-eccezioni)
+    - [Proviamo invece a gestire l'eccezione](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#proviamo-invece-a-gestire-leccezione)
+    - [Modulo contextlib](classNotes/11_19-3%20-%20Strutturale%20-%20Facade.md#modulo-contextlib)
+
+## 11_19-4 - Comportamentale - Template Method.md
+
+- [Comportamentale - Template Method](classNotes/11_19-4%20-%20Comportamentale%20-%20Template%20Method.md#comportamentale---template-method)
+
+## 11_19-5 Creazionale - Factory Method.md
+
+- [Creazionale - Factory Method](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#creazionale---factory-method)
+  - [Esempio](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#esempio)
+    - [Esempio Dama](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#esempio-dama)
+  - [Metodo alternativo per popolare la scacchiera di CheckersBoard.](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#metodo-alternativo-per-popolare-la-scacchiera-di-checkersboard)
+  - [Ancora un nuovo Factory Method](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#ancora-un-nuovo-factory-method)
+  - [create_piece senza uso di AbstractBoard.\_\_classForPiece](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#create_piece-senza-uso-di-abstractboard\_\_classforpiece)
 
 ## Strutturale - Adapter.md
 
 - [Strutturale - Adapter](classNotes/Strutturale%20-%20Adapter.md#strutturale---adapter)
     - [Altro Esempio](classNotes/Strutturale%20-%20Adapter.md#altro-esempio)
-
-## Strutturale - Facade.md
-
-- [Strutturale - Facade](classNotes/Strutturale%20-%20Facade.md#strutturale---facade)
-- [Context Manager](classNotes/Strutturale%20-%20Facade.md#context-manager)
-
-## Strutturale - Flyweight.md
-
-- [Strutturale - Flyweight](classNotes/Strutturale%20-%20Flyweight.md#strutturale---flyweight)
 

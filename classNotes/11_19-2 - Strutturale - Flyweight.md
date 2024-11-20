@@ -8,14 +8,16 @@
     - Ciò assicura che ciascun oggetto distinto venga creato un’unica volta
 - In alcune situazioni si potrebbero avere molti oggetti non piccoli dove gran parte di essi o tutti sono unici. Un facile modo per ridurre l’uso dela memoria è usare __slots__
 
-__Slots__
+## \_\_slots__
 
 - Ogni classe può avere attributi di istanza.
-- Python di default salva gli attributi in un dict. È utile perché ci permette di settare attributi durante l’esecuzione.
+- Python di default salva gli attributi di istanza in un dict. È utile perché ci permette di settare attributi durante l’esecuzione.
 - Comunque classi piccole con attributi noti potrebbero portare a colli di bottiglia perché il dict è uno spreco di RAM.
-- Attraverso __slots__ indichiamo a Python di non usare un dict e di allocare lo spazio sufficiente per un insieme fissato di attributi.
+- Attraverso \_\_slots__ indichiamo a Python di non usare un dict e di allocare lo spazio sufficiente per un insieme fissato di attributi.
+  - Riserva spazio per le variabili dichiarate e previene la creazione automatica di dict per ciascuna istanza.
 
-```java
+## Confronto memoria risparmiata con \_\_slots__
+```Python
 class MyClass():
 	def __init__(self, name, identifier):
 		self.name = name
@@ -28,7 +30,7 @@ class MyClass():
 		self.identifier=identifier
 ```
 
-```java
+```Python
 class Point:
 
 	__slots__ = ("x", "y", "z", "color")
@@ -40,13 +42,14 @@ class Point:
 	 self.color = color
 ```
 
-Un programma per creare una tupla di un milione di punti ha impiegato su una stessa macchina
-• nella versione con slots, circa 2 secondi e il programma ha occupato 183 Mebibyte di RAM
-• nella versione senza slots, una frazione di secondo in meno ma il programma ha occupato 312 Mebibyte di RAM
+Un programma per creare una tupla di un milione di punti ha impiegato su una stessa macchina 
+- nella versione con slots, circa 2 secondi e il programma ha occupato 183 Mebibyte di RAM
+- nella versione senza slots, una frazione di secondo in meno ma il programma ha occupato 312 Mebibyte di RAM
 
-Consumare memoria consente di avere maggiore velocità. Ma questo dipende dalle priorità.
+- Consumare memoria consente di avere maggiore velocità. Ma questo dipende dalle priorità.
 
-```java
+### Ulteriore implementazione con memoria persistente
+```Python
 class Point:
 	 __slots__ = ()
 	 __dbm = shelve.open(os.path.join(tempfile.gettempdir(), "point.db"))
@@ -68,22 +71,22 @@ class Point:
 																						#dall'ID restituita da id(self) in esadecimale e dal nome dell'attributo
 ```
 
-Questa nuova classe utilizza un database DBM (chiave-valore) immagazzinato in un file su disco.
+- Questa nuova classe utilizza un database DBM (chiave-valore) immagazzinato in un file su disco.
 
-Un riferimento al DBM è mantenuto nella variabile Point.__dbm.
+- Un riferimento al DBM è mantenuto nella variabile Point.__dbm.
 
-Tutti i punti condividono lo stesso file DBM.
+- Tutti i punti condividono lo stesso file DBM.
 
-shelve.open apre un dizionario persistente.
+- shelve.open apre un dizionario persistente.
 
-Il filename specificato è il nome di base per il database sottostante.
+- Il filename specificato è il nome di base per il database sottostante.
 
-Per default il file database è aperto in lettura e scrittura. Se non esiste viene creato.
+- Per default il file database è aperto in lettura e scrittura. Se non esiste viene creato.
 
-Il modulo shelve serializza i valori immagazzinati e li deserializza quando vengono recuperati dal database.
+- Il modulo shelve serializza i valori immagazzinati e li deserializza quando vengono recuperati dal database.
 
-Il processo di deserializzazione in Python non è sicuro perché esegue codice arbitrario e non può mai essere effettuato su dati provenienti da fonti non affidabili. 
+- Il processo di deserializzazione in Python non è sicuro perché esegue codice arbitrario e non può mai essere effettuato su dati provenienti da fonti non affidabili. 
 
-Le chiavi e valori dei database DBM devono essere in byte. Python accetta sia stringhe che byte e le converte in stringhe di byte. Un valore recuperato dal database è convertito dalla rappresentazione sotto forma di sequenza di bytes nel tipo originario. 
+- Le chiavi e valori dei database DBM devono essere in byte. Python accetta sia stringhe che byte e le converte in stringhe di byte. Un valore recuperato dal database è convertito dalla rappresentazione sotto forma di sequenza di bytes nel tipo originario. 
 
-Sulla macchina usata per i test, la creazione di un milione di punti ha richiesto circa un minuto ma il programma ha occupato solo 29 Mebibyte di RAM, mentre la versione precedente 183 Mebibyte
+- Sulla macchina usata per i test, la creazione di un milione di punti ha richiesto circa un minuto ma il programma ha occupato solo 29 Mebibyte di RAM, mentre la versione precedente 183 Mebibyte
