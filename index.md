@@ -231,8 +231,30 @@
   - [Ancora un nuovo Factory Method](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#ancora-un-nuovo-factory-method)
   - [create_piece senza uso di AbstractBoard.\_\_classForPiece](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#create_piece-senza-uso-di-abstractboard\_\_classforpiece)
 
-## Strutturale - Adapter.md
 
-- [Strutturale - Adapter](classNotes/Strutturale%20-%20Adapter.md#strutturale---adapter)
-    - [Altro Esempio](classNotes/Strutturale%20-%20Adapter.md#altro-esempio)
 
+## 12_9 - Strutturale - Adapter.md
+
+- [Strutturale - Adapter](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#strutturale---adapter)
+- [op() riceve un'istanza di Adapter che ha gli stessi metodi](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#op()-riceve-unistanza-di-adapter-che-ha-gli-stessi-metodi)
+- [dell'interfaccia desiderata (WhatIWant), cioè il metodo f()](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#dellinterfaccia-desiderata-(whatiwant),-cioè-il-metodo-f())
+- [che viene invocato all'interno di op()](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#che-viene-invocato-allinterno-di-op())
+  - [Implementazione per le classi Computer e Synthesizer](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#implementazione-per-le-classi-computer-e-synthesizer)
+- [implementato con l’esempio Computer](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#implementato-con-l’esempio-computer)
+- [op() riceve un’istanza di Adapter il cui](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#op()-riceve-un’istanza-di-adapter-il-cui)
+- [metodo execute() si comporta come speak()](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#metodo-execute()-si-comporta-come-speak())
+- [della classe Human.](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#della-classe-human)
+  - [Altra Implementazione con Ereditarietà](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#altra-implementazione-con-ereditarietà)
+- [op() riceve un’istanza di Adapter il cui](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#op()-riceve-un’istanza-di-adapter-il-cui)
+- [metodo execute() si comporta come speak()](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#metodo-execute()-si-comporta-come-speak())
+- [della classe Human.](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#della-classe-human)
+  - [Altro Esempio](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#altro-esempio)
+    - [Esempio di utilizzo](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#esempio-di-utilizzo)
+    - [Miglioramenti alla classe Page](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#miglioramenti-alla-classe-page)
+  - [Classe ChainMap](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#classe-chainmap)
+
+## 12_10 - Multitasking e Coroutine.md
+
+- [Multitasking e Coroutine](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#multitasking-e-coroutine)
+  - [Coroutine e Concorrenza](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#coroutine-e-concorrenza)
+    - [Un esempio](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#un-esempio)
