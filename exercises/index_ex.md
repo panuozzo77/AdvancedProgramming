@@ -12,6 +12,12 @@
 - [8_state](#8_state)
 - [9_mediator](#9_mediator)
 - [10_observer](#10_observer)
+- [11_prototype](#11_prototype)
+- [12_flyweight](#12_flyweight)
+- [13_facade](#13_facade)
+- [14_template_method](#14_template_method)
+- [15_factory_method](#15_factory_method)
+- [16_inspect](#16_inspect)
 
 ---
 
@@ -548,5 +554,62 @@ print("Cambio stato: lo studente ha appena superato la prova di Inglese\n") se i
 print("Cambio stato: lo studente ha superato un nuovo esame").
 print("Cambio stato: il numero di CFU è: ", student.total_cfu, "\n") se il cambiamento di stato è dovuto al superamento di un nuovo esame.
 ```
+
+---
+## [11_prototype](11_prototype)
+
+
+---
+## [12_flyweight](12_flyweight)
+
+- [esempio.py](12_flyweight/esempio.py)
+
+```text
+FW memorizza la parte comune dello stato in SharedState
+```
+
+---
+## [13_facade](13_facade)
+
+
+---
+## [14_template_method](14_template_method)
+
+- [esempio.py](14_template_method/esempio.py)
+
+---
+## [15_factory_method](15_factory_method)
+
+
+---
+## [16_inspect](16_inspect)
+
+- [manovratore.py](16_inspect/manovratore.py)
+
+```text
+def main():
+    print("\nTest con 2 auto e 2 autobus:")
+    automobiliID=("AB123CD", "AF234EF")
+    autobusInfo=(("11",("via Roma","via Poseidonia")),("21",("via Canalone","via Vinciprova")))
+    strada=Strada(automobiliID,autobusInfo)
+    auto1=strada.getVeicolo("AB123CD")
+    auto2=strada.getVeicolo("AF234EF")
+    bus1=strada.getVeicolo("11")
+    bus2=strada.getVeicolo("21")
+    
+    auto1.sonoARiserva()
+    auto2.sonoARiserva()
+    bus1.arrivaAllaFermata()
+    bus1.arrivaAllaFermata()
+    
+    bus2.arrivaAllaFermata()
+    bus2.arrivaAllaFermata()
+    
+
+    
+if __name__=="__main__":
+    main()
+```
+- [moduloVeicoli.py](16_inspect/moduloVeicoli.py)
 
 ---

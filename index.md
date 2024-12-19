@@ -231,8 +231,6 @@
   - [Ancora un nuovo Factory Method](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#ancora-un-nuovo-factory-method)
   - [create_piece senza uso di AbstractBoard.\_\_classForPiece](classNotes/11_19-5%20Creazionale%20-%20Factory%20Method.md#create_piece-senza-uso-di-abstractboard\_\_classforpiece)
 
-
-
 ## 12_9 - Strutturale - Adapter.md
 
 - [Strutturale - Adapter](classNotes/12_9%20-%20Strutturale%20-%20Adapter.md#strutturale---adapter)
@@ -258,3 +256,50 @@
 - [Multitasking e Coroutine](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#multitasking-e-coroutine)
   - [Coroutine e Concorrenza](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#coroutine-e-concorrenza)
     - [Un esempio](classNotes/12_10%20-%20Multitasking%20e%20Coroutine.md#un-esempio)
+
+## 12_12 - Modulo Inspect.md
+
+- [Il modulo Inspect](classNotes/12_12%20-%20Modulo%20Inspect.md#il-modulo-inspect)
+  - [metodo inspect.getmembers](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetmembers)
+- [modulo.py](classNotes/12_12%20-%20Modulo%20Inspect.md#modulopy)
+  - [metodo inspect.getmodulename](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetmodulename)
+  - [metodo inspect.getdoc](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetdoc)
+  - [metodo inspect.getcomments](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetcomments)
+  - [metodo inspect.getfullargs](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetfullargs)
+- [esempio di getfullargs](classNotes/12_12%20-%20Modulo%20Inspect.md#esempio-di-getfullargs)
+    - [altri metodi](classNotes/12_12%20-%20Modulo%20Inspect.md#altri-metodi)
+  - [metodo inspect.signature](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectsignature)
+  - [classe inspect.Signature](classNotes/12_12%20-%20Modulo%20Inspect.md#classe-inspectsignature)
+  - [metodi mind e bind_partial di Signature](classNotes/12_12%20-%20Modulo%20Inspect.md#metodi-mind-e-bind_partial-di-signature)
+  - [metodo Signature.replace](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-signaturereplace)
+  - [classe inspect.Parameter](classNotes/12_12%20-%20Modulo%20Inspect.md#classe-inspectparameter)
+  - [metodi inspect.stack e inspect.trace](classNotes/12_12%20-%20Modulo%20Inspect.md#metodi-inspectstack-e-inspecttrace)
+  - [classe inspect.FrameInfo](classNotes/12_12%20-%20Modulo%20Inspect.md#classe-inspectframeinfo)
+  - [metodi inspect.getgeneratorstate e inspect.getgeneratorlocals](classNotes/12_12%20-%20Modulo%20Inspect.md#metodi-inspectgetgeneratorstate-e-inspectgetgeneratorlocals)
+  - [metodo inspect.getattr_static](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetattr_static)
+  - [metodo inspect.getmembers_static(object [,predicate])](classNotes/12_12%20-%20Modulo%20Inspect.md#metodo-inspectgetmembers_static(object-[,predicate]))
+  - [classe inspect.Traceback](classNotes/12_12%20-%20Modulo%20Inspect.md#classe-inspecttraceback)
+
+## 12_13 - Concorrenza.md
+
+- [Concorrenza](classNotes/12_13%20-%20Concorrenza.md#concorrenza)
+  - [Tipi di concorrenza e dati condivisi](classNotes/12_13%20-%20Concorrenza.md#tipi-di-concorrenza-e-dati-condivisi)
+    - [Concorrenza in Python](classNotes/12_13%20-%20Concorrenza.md#concorrenza-in-python)
+  - [Problematiche legate a GIL](classNotes/12_13%20-%20Concorrenza.md#problematiche-legate-a-gil)
+  - [Concorrenza](classNotes/12_13%20-%20Concorrenza.md#concorrenza)
+    - [Livelli di Concorrenza](classNotes/12_13%20-%20Concorrenza.md#livelli-di-concorrenza)
+    - [Dati modificabili condivisi](classNotes/12_13%20-%20Concorrenza.md#dati-modificabili-condivisi)
+  - [Informazioni sul pacchetto multiprocessing](classNotes/12_13%20-%20Concorrenza.md#informazioni-sul-pacchetto-multiprocessing)
+- [Esempio](classNotes/12_13%20-%20Concorrenza.md#esempio)
+  - [modulo concurrent.futures](classNotes/12_13%20-%20Concorrenza.md#modulo-concurrentfutures)
+- [Esempio di Multiprocessing con uso di Futures](classNotes/12_13%20-%20Concorrenza.md#esempio-di-multiprocessing-con-uso-di-futures)
+- [svolge lo stesso compito di add_jobs() solo che qui è un'implementazione generatore che restituisce job su richiesta](classNotes/12_13%20-%20Concorrenza.md#svolge-lo-stesso-compito-di-add_jobs()-solo-che-qui-è-unimplementazione-generatore-che-restituisce-job-su-richiesta)
+- [Concorrenza I/O Bound](classNotes/12_13%20-%20Concorrenza.md#concorrenza-i/o-bound)
+  - [Esempio](classNotes/12_13%20-%20Concorrenza.md#esempio)
+    - [Informazioni sul pacchetto threading](classNotes/12_13%20-%20Concorrenza.md#informazioni-sul-pacchetto-threading)
+  - [Ritorniamo all'esempio con code e threading](classNotes/12_13%20-%20Concorrenza.md#ritorniamo-allesempio-con-code-e-threading)
+- [Implementazione con Futures e threading](classNotes/12_13%20-%20Concorrenza.md#implementazione-con-futures-e-threading)
+  - [Oggetti Condivisi](classNotes/12_13%20-%20Concorrenza.md#oggetti-condivisi)
+
+
+
