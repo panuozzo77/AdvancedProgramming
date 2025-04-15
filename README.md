@@ -20,6 +20,8 @@ Benvenuti nel repository di **Programmazione Avanzata**! Questo repository conti
     
   - **2024_2025/**: Diapositive per l'anno accademico 2024-2025.
 
+  - **Teams_2024-25/**: Materiale su Microsoft Teams.
+
 # Advanced Programming Repository 🇬🇧
 
 Welcome to the **Advanced Programming** repository! This repository contains resources for the Advanced Programming course, including class notes, slides, and relevant books. Below is an overview of the folder structure and the contents of each directory.
@@ -42,13 +44,15 @@ Welcome to the **Advanced Programming** repository! This repository contains res
     
   - **2024_2025/**: Slides for the academic year 2024-2025.
 
+  - **Teams_2024-25/**: Materials on Microsoft Teams.
+
 ## Usage
 🇮🇹 Sentiti libero di esplorare le cartelle per trovare le risorse di cui hai bisogno. Se hai domande o suggerimenti, apri un problema in questo repository.
 
 🇬🇧 Feel free to explore the folders to find the resources you need. If you have any questions or suggestions, please open an issue in this repository.
 
 ## License
-🇮🇹 Questo repository è mantenuto solo per scopi educativi.
+🇮🇹 Questo repository è mantenuto solo per scopi educativi e come archivio per gli studenti.
 
-🇬🇧 This repository is maintained for educational purposes only. 
+🇬🇧 This repository is maintained for educational purposes only and as archive for students. 
 
