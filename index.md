@@ -77,17 +77,17 @@
 
 ## 10_07.md
 
-  - [Classi in Python](classNotes/10_07.md#classi-in-python)
-  - [Attributi di classe e Attributi di istanza](classNotes/10_07.md#attributi-di-classe-e-attributi-di-istanza)
-  - [Costruttori in Python](classNotes/10_07.md#costruttori-in-python)
-  - [Metodi di una classe](classNotes/10_07.md#metodi-di-una-classe)
-  - [Assegnamenti dinamici](classNotes/10_07.md#assegnamenti-dinamici)
-- [vedi la definizione di MyClass e la dichiarazione di var_a, var_b e var_c che c'è sopra](classNotes/10_07.md#vedi-la-definizione-di-myclass-e-la-dichiarazione-di-var_a,-var_b-e-var_c-che-cè-sopra)
-  - [Altro sui metodi](classNotes/10_07.md#altro-sui-metodi)
-  - [Overloading di operatori](classNotes/10_07.md#overloading-di-operatori)
-  - [L'operatore \_\_call__](classNotes/10_07.md#loperatore-\_\_call__)
-  - [L'operatore \_\_bool__](classNotes/10_07.md#loperatore-\_\_bool__)
-  - [L'operatore \_\_iter__](classNotes/10_07.md#loperatore-\_\_iter__)
+  - [Classi in Python](classNotes/10_07 - Attributi Classe_Istanza#classi-in-python)
+  - [Attributi di classe e Attributi di istanza](classNotes/10_07 - Attributi Classe_Istanza#attributi-di-classe-e-attributi-di-istanza)
+  - [Costruttori in Python](classNotes/10_07 - Attributi Classe_Istanza#costruttori-in-python)
+  - [Metodi di una classe](classNotes/10_07 - Attributi Classe_Istanza#metodi-di-una-classe)
+  - [Assegnamenti dinamici](classNotes/10_07 - Attributi Classe_Istanza#assegnamenti-dinamici)
+- [vedi la definizione di MyClass e la dichiarazione di var_a, var_b e var_c che c'è sopra](classNotes/10_07 - Attributi Classe_Istanza#vedi-la-definizione-di-myclass-e-la-dichiarazione-di-var_a,-var_b-e-var_c-che-cè-sopra)
+  - [Altro sui metodi](classNotes/10_07 - Attributi Classe_Istanza#altro-sui-metodi)
+  - [Overloading di operatori](classNotes/10_07 - Attributi Classe_Istanza#overloading-di-operatori)
+  - [L'operatore \_\_call__](classNotes/10_07 - Attributi Classe_Istanza#loperatore-\_\_call__)
+  - [L'operatore \_\_bool__](classNotes/10_07 - Attributi Classe_Istanza#loperatore-\_\_bool__)
+  - [L'operatore \_\_iter__](classNotes/10_07 - Attributi Classe_Istanza#loperatore-\_\_iter__)
 
 ## 10_08.md
 
